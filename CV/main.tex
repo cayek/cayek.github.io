@@ -1,0 +1,99 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage[top=2cm, bottom=2cm, left=1cm, right=1.7cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Kevin}
+\familyname{Caye}
+\title{Doctorant en troisième année\\en informatique et mathématiques appliquées}     
+\address{18 rue du pont Prouiller}{38700 La Tronche}    
+\email{kevin.caye@univ-grenoble-alpes.fr}      
+\mobile{+33 6 19 45 11 46} 
+\homepage{cayek.github.io}
+\extrainfo{26 ans -- Permis B}
+%\photo[64pt][0.4pt]{picture}
+\begin{document}
+\maketitle
+
+%\vspace{-1cm}
+
+\section{Compétences}
+\vspace{0.2cm}
+\cvitem{Programmation}{C/C++, Cuda, VTK/ITK, Paraview, Sofa, OpenGL/GLSL, Python, OpenMP/MPI, MatLab}
+\vspace{0.1cm}
+\cvitem{OS}{Linux, Windows}
+\vspace{0.1cm}
+\cvitem{Langues}{Anglais (courant), Espagnol (bon niveau)}
+\vspace{0.1cm}
+\cvitem{Autres}{Méthodologie Agile, Git, Cmake, Qt, UML}
+
+\vspace{0.5cm}
+
+\section{Formation}
+\vspace{0.2cm}
+\cventry{2014 -- 2017}{Thèse en maths appliquées}{TIMC-IMAG, La Tronche (38), AVR-ICube, Strasbourg (67)}{}{}{Simulation biomécanique du cerveau pour la neurochirurgie (soutenance prévue en Septembre 2017).}
+\vspace{0.1cm}
+\cventry{2011 -- 2014}{Grenoble-INP, ENSIMAG}{Saint Martin d'Hères (38)}{}{}{Diplôme d'ingénieur en informatique et mathématiques appliquées, filière MMIS (Modélisation Mathématique, Image et Simulation), \textbf{mention très bien}.\vspace{1mm}\\
+\textbf{Projet de Spécialité} (Mai -- Juin 2013): Implémentation d'un descripteur de mouvement de maillages animés innovant (Laplacien 3D+t). Projet réalisé suivant la \textbf{méthodologie Agile}.\vspace{1mm}\\
+\textbf{Projet Compilation} (Janvier -- Février 2013): Implémentation d'un compilateur pour le langage Déca (sous-langage Java). Projet réalisé suivant la \textbf{méthodologie Agile}.}
+\vspace{0.1cm}
+\cventry{2009 -- 2011}{La Prépa des INP}{Saint Martin d'Hères (38)}{}{}{Classe préparatoire intégrée à l'Institut National Polytechnique}
+\vspace{0.1cm}
+\cventry{Juin 2009}{Baccalauréat Scientifique}{Seyssinet-Pariset (38)}{}{}{Spécialité mathématiques, \textbf{mention très bien}}
+
+\vspace{0.5cm}
+
+\section{Expériences professionnelles}
+\vspace{0.2cm}
+\cventry{2014 -- 2017}{Thèse en maths appliquées}{TIMC-Imag, La Tronche (38), AVR-ICube, Strasbourg (67)}{}{}{Lors de l'ablation chirurgicale de tumeur cérébrale, le planning et la navigation sont basés sur les images IRM pré-opératoires. Cependant, la déformation des tissus mous du cerveau survenant pendant l'opération, appelée \og brain-shift \fg{}, affecte la précision du geste chirurgical. Le but de cette thèse est alors de mettre à jour les images IRM pré-opératoires suivant la déformation courante des tissus, observée à partir d'images échographiques acquises pendant la chirurgie. Pour cela, un modèle biomécanique éléments finis est utilisé afin de recaler les données pré- et per-opératoires (arbre vasculaire et surface corticale) extraites automatiquement des images médicales.\vspace{1mm}\\
+\textbf{Enseignement}: 2 ans de monitorat à Réseau Polytech Grenoble: Modélisation des Systèmes d'Information (TD et TP, niveau L3), Mathématiques Discrètes (TD, niveau L3), Apprentissage de la Programmation Orientée Objet (TD et TP, niveau L3), Bases de Données (TD et TP, niveau M1).\vspace{1mm}\\
+\textbf{Encadrement}: 2 étudiants en stage de fin de première année ENSIMAG (Juin -- Juillet 2015), 2 étudiants en projet d'introduction à la recherche en deuxième année ENSIMAG et MOSIG (Février -- Juin 2016), 4 étudiants en projet de spécialité de deuxième année ENSIMAG (Février -- Juin 2017)}
+\vspace{0.1cm}
+\cventry{Février -- Août 2014}{Stage recherche et développement}{Dassault Systèmes, Vélizy-Villacoublay (77)}{}{}{Dans le département \og Science and Corporate Research \fg{}, implémentation d'un pipeline complet et innovant de modélisation, simulation et rendu graphique de cheveux en temps réel. Après avoir réalisé l'état de l'art, les méthode choisies dans la littérature ont été implémentées sur CPU puis GPU.}
+\vspace{0.1cm}
+\cventry{Juillet -- Août 2013}{Stage recherche et développement}{Esterel Technologies, Villeneuve-Loubet (06)}{}{}{Implémentation d'un moteur graphique de carte à partir de données GPS d'élévation visant à être intégré au sein d'un cockpit d'avion.}
+
+\vspace{0.5cm}
+
+\section{Publications et conférences internationales}
+\vspace{0.2cm}
+\cventry{Soumis}{Brain-shift compensation using intraoperative ultrasound and constraint-based biomechanical simulation}{Medical Image Analysis}{\textbf{F. Morin}, H. Courtecuisse, I. Reinertsen, F. Le Lann, O. Palombi, Y. Payan, M. Chabanas}{\textbf{accepté avec révisions mineures}}{}
+\vspace{0.1cm}
+\cventry{2017}{Biomechanical modeling of brain soft tissues for medical applications}{Biomechanics of Living Organs: Hyperelastic Constitutive Laws for Finite Element Modeling}{\textbf{F. Morin}, M. Chabanas, H. Courtecuisse, Y. Payan}{}{}
+\vspace{0.1cm}
+\cventry{Juin 2016}{Vessel-based brain-shift compensation using elastic registration driven by a patient-specific finite element model}{Conférence IPCAI 2016 , Heidelberg (Allemagne)}{\textbf{F. Morin}, I. Reinertsen, H. Courtecuisse, O. Palombi, B. Munkvold, H.K. B\o, Y. Payan, M. Chabanas}{}{}
+\vspace{0.1cm}
+\cventry{Octobre 2015}{Rest shape computation for highly deformable model of brain}{Computer Methods in Biomechanics and Biomedical Engineering}{\textbf{F. Morin}, H. Courtecuisse, M. Chabanas, Y. Payan}{}{}
+
+\vspace{0.5cm}
+
+\section{Centres d’intérêt}
+\vspace{0.2cm}
+\cvitem{Sports}{Tennis en compétition (par équipe et individuelle) et sports de montagne (ski, snowboard, randonnées, trekking, course à pied, raid multisports).}
+\vspace{0.1cm}
+\cvitem{Associatif}{Trésorière du club de tennis de Seyssins (38), ex-membre du bureau des sports de l'ENSIMAG, ex-trésorière du bureau des élèves de La Prépa des INP}
+\vspace{0.1cm}
+\cvitem{Voyages}{Visite de nombreux pays d'Europe (Portugal, Espagne, Italie, Norvège, Irlande, Belgique, Pays-Bas, Turquie) et du monde (USA, Sri Lanka, Algérie, Mauritanie, Maroc, Tunisie).}
+
+\vspace{0.5cm}
+
+\section{Références}
+\vspace{0.2cm}
+\cvitem{Y. Payan}{Directeur de recherche CNRS rattaché au laboratoire TIMC-IMAG et responsable de l'équipe GMCAO (La Tronche, France)}
+\vspace{0.1cm}
+\cvitem{M. Chabanas}{Maître de conférence rattaché à l'ENSIMAG et au laboratoire TIMC-IMAG (La Tronche, France)}
+\vspace{0.1cm}
+\cvitem{I. Reinertsen}{Chercheuse rattachée au laboratoire SINTEF Medical Technologies (Trondheim, Norvège)}
+\vspace{0.1cm}
+\cvitem{C. Ngo Ngoc}{Chercheur au sein du département \og Science and Corporate Research \fg{} de Dassault Systèmes (Vélizy-Villacoublay, France)}
+
+
+\end{document}
+
