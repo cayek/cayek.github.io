@@ -1,3 +1,16 @@
+#CV
+CV/*.pdf
+CV/*.log
+CV/*.out
+CV/*.html
+CV/*.tuc
+CV/*.rtf
+CV/*.docx
+CV/*.aux
+CV/auto/
+
+
+
 # jekyll
 _site/
 

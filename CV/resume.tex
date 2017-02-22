@@ -1,0 +1,204 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[kevin-caye]{Kevin Caye}
+
+\thinrule
+
+\startblockquote
+Informatique - Modélisation Probabiliste - Apprentissage Automatique -
+Optimisation - Visualisation de données
+\stopblockquote
+
+\thinrule
+
+\subsection[compétences]{Compétences}
+
+\startdescription{Langues}
+  {\bf Anglais :} bon niveau.
+
+  {\bf Espagnol :} niveau moyen
+\stopdescription
+
+\startdescription{Informatique}
+  {\bf Programmation :} R, python, C/C++.
+
+  {\bf OS :} Linux, OSX.
+
+  {\bf Outils :} emacs, orgmode, git.
+\stopdescription
+
+\startdescription{Maths}
+  Optimisation
+
+  Modélisation Probabiliste
+
+  Apprentissage Automatique
+\stopdescription
+
+\subsection[formation]{Formation}
+
+\startdescription{2014-2017}
+  {\bf Thèse en maths appliquées}; TIMC-IMAG, La Tronche (38)
+
+  {\em Titre de la thèse: Méthodes d'apprentissage statistique pour les
+  tests d'association écologique}
+\stopdescription
+
+\startdescription{2011-2014}
+  {\bf Diplôme d'ingénieur en informatique et mathématiques appliquées};
+  Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38)
+
+  {\em Filière : MMIS (Modélisation Mathématique, Image et Simulation)}
+\stopdescription
+
+\startdescription{2009-2011}
+  {\bf Classe préparatoire MP*}; lycés Albert schweitzer, Le Raincy (93)
+\stopdescription
+
+\startdescription{2008-2009}
+  {\bf Classe préparatoire MPSI}; lycés Albert schweitzer, Le Raincy
+  (93)
+\stopdescription
+
+\subsection[expérience-professionnelles]{Expérience professionnelles}
+
+\startdescription{2014-2017}
+  {\bf Thèse en maths appliquées:}
+\stopdescription
+
+\startdescription{2014-2016}
+  {\bf Enseignement:} Deux ans de monitorat à l'UGA (Université de
+  Grenoble Alpes) en L1.
+\stopdescription
+
+\startdescription{Février-Août 2014}
+  {\bf Stage recherche et developement à Dassault Système,
+  Vélize-Villacoublay (78):} Dans le département {\em Science and
+  Corporate Research}, j'ai travailler sur des méthodes de simulation de
+  mouvement basé sur des exemples.
+\stopdescription
+
+\startdescription{Juillet-Aout 2013}
+  {\bf Stage ingénieur R&D à l'INRIA Montbonnot (38)} Implementation de
+  technique de rendu 3D a l'aide de la bibliothèque Gigavoxel (C++,
+  GLSL, CUDA).
+\stopdescription
+
+\subsection[publications]{Publications}
+
+{\bf Fast Inference of Individual Admixture Coefficients Using
+Geographic Data}\crlf
+Kevin Caye, Flora Jay, Olivier Michel, Olivier François\crlf
+{\em bioRxiv}; doi: http://dx.doi.org/10.1101/080291
+
+{\bf Identifying outlier loci in admixed and in continuous populations
+using ancestral population differentiation statistics}\crlf
+Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier
+François\crlf
+{\em bioRxiv}; doi: http://dx.doi.org/10.1101/054585
+
+{\bf Controlling false discoveries in genome scans for selection}\crlf
+Olivier François, Helena Martins, Kevin Caye, Sean D. Schoville\crlf
+{\em Molecular ecology}, 2016, vol.~25, no 2, p.~454-469; doi:
+http://dx.doi.org/10.1111/mec.13513
+
+{\bf TESS3: fast inference of spatial population structure and genome
+scans for selection}\crlf
+Kevin Caye, Timo M. Deist, Helena Martins, Olivier François\crlf
+{\em Molecular ecology resources}, 2016, vol.~16, no 2, p.~540-548; doi:
+http://dx.doi.org/10.1111/1755-0998.12471
+
+\subsection[centre-dinterêt]{Centre d'interêt}
+
+\startdescription{Sports}
+  Karaté Kyokushin en compétition et sport de montagne (ski, randonnées,
+  trecking, trail, raid multisports).
+\stopdescription
+
+\subsection[références]{Références}
+
+\startitemize
+\item
+  Olivier Francois
+\item
+  Michael Blum
+\item
+  Evertonn
+\stopitemize
+
+\thinrule
+
+\startblockquote
+\useURL[url1][mailto:kevin.caye@gmail.com][][kevin.caye@gmail.com]\from[url1]
+• +33 6 19 45 11 46 • 26 ans\crlf
+18 rue du pont prouiller - La Tronche 38700, France
+\stopblockquote
+
+\stoptext
