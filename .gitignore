@@ -9,6 +9,10 @@ CV/*.docx
 CV/*.aux
 CV/auto/
 
+#cover letter
+CoverLetters/*.html
+CoverLetters/*.pdf
+CoverLetters/*.tex
 
 
 # jekyll
