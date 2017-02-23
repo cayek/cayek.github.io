@@ -3,31 +3,28 @@ Kevin Caye
 
 ----
 
-> Informatique - Modélisation Probabiliste - Apprentissage Automatique
-> - Optimisation - Visualisation de données
+> Computer Science - Statistics - Machine Learning - Optimization -
+>   Data Visualization
 
 ----
+
 
 Compétences
 ------------
 Langues
 : **Anglais :** bon niveau. 
 
-: **Espagnol :** niveau moyen
+: **Espagnol :** niveau moyen.
 
 Informatique
-:  **Programmation :** R, python, C/C++.
+:  **Programmation :** R, python, C/C++, SQL.
 
-: **OS :** Linux, OSX.
+: **OS :** Linux, OS X.
 
-: **Outils :** emacs, orgmode, git.
+: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter.
 
 Maths
-: Optimisation
-
-:  Modélisation Probabiliste
-
-: Apprentissage Automatique
+: Optimisation, Statistiques, Modélisation Probabiliste, Apprentissage Automatique.
 
 
 
@@ -48,33 +45,40 @@ Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38)
     *Filière : MMIS (Modélisation Mathématique, Image et Simulation)*
     
     
-2009-2011 
-:  **Classe préparatoire MP\***; lycés Albert schweitzer, Le Raincy (93)
+2008-2011 
+:  **Classe préparatoire MPSI/MP\***; lycés Albert schweitzer, Le Raincy (93)
 
-2008-2009 
-:  **Classe préparatoire MPSI**; lycés Albert schweitzer, Le Raincy (93)
-
-Expérience professionnelles
-----------
+Expériences professionnelles
+-------------------------------
 
 2014-2017
-:     **Thèse en maths appliquées:**
+: **Thèse en maths appliquées.** 
+Les manières de représenter la santé et le vivant ont considérablement changé
+durant ces dernières années, et les nouvelles représentations font appel à la
+collecte de données massives. De telles représentations concernent plus
+particulièrement les données épidémiologiques et démographiques, ainsi que les
+données biologiques issues de plates-formes à haut débit. L'objectif de cette
+thèse est de développer les méthodes qui permetent de detecter les signatures
+d'association entre variables dans telless données. En particulier nous nous
+interessons aux modèles basées sur des problèmes d'optimisation faisant
+intervenir des factorisations matricielles.
 
 2014-2016
-:     **Enseignement:**
+:     **Enseignement.**
 Deux ans de monitorat à l'UGA (Université de Grenoble Alpes) en L1.
 
 
 Février-Août 2014 
 : **Stage recherche et developement à Dassault Système, Vélize-Villacoublay
-(78):**
-Dans le département *Science and Corporate Research*, j'ai travailler sur des
-méthodes de simulation de mouvement basé sur des exemples. 
+(78).** 
+Dans le département *Science and Corporate Research*, le stage consistait à
+faire un état de l'art des méthodes de simulation 3D basées sur des exemples. Il
+fallait par la suite implémenter un prototype à l'aide d'openGL et C++.
 
 Juillet-Aout 2013
-: **Stage ingénieur R&D à l'INRIA Montbonnot (38)**
-Implementation de technique de rendu 3D a l'aide de la bibliothèque Gigavoxel
-(C++, GLSL, CUDA).
+: **Stage ingénieur R&D à l'INRIA Montbonnot (38).** 
+Dans l'équipe MAVERICK, le stage consistait à implementer des techniques de
+rendu 3D à l'aide de la bibliothèque Gigavoxel (C++, GLSL, CUDA).
 
 Publications
 --------------------
@@ -107,11 +111,14 @@ trecking, trail, raid multisports).
 
 Références
 ----------------------------------------
-* Olivier Francois
+* [Olivier Francois](http://membres-timc.imag.fr/Olivier.Francois/), maître de
+  conférence rattaché à l'ENSIMAG et au laboratoire TIMC-IMAG (La Tronche, France)
 
-* Michael Blum
+* [Michael Blum](http://membres-timc.imag.fr/Michael.Blum/), directeur de
+  recherche CNRS rattaché au laboratoire TIMC-IMAG et responsable de l'équipe
+  BCM (La Tronche, France)
 
-* Evertonn 
+* [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingenieur de recherche à Dassault Systemes (Vélizy-Villacoublay, France)
 
 
 ----
