@@ -12,9 +12,9 @@ Kevin Caye
 Compétences
 ------------
 Langues
-: **Anglais :** bon niveau. 
+: **Anglais :** bon niveau (lu, écrit, parlé). 
 
-: **Espagnol :** niveau moyen.
+: **Espagnol :** niveau moyen (lu, écrit, parlé).
 
 Informatique
 :  **Programmation :** R, python, C/C++, SQL.
@@ -23,7 +23,7 @@ Informatique
 
 : **Outils :** Emacs, Org mode, Git, RStudio, Jupyter.
 
-Maths
+Mathématiques
 : Optimisation, Statistiques, Modélisation Probabiliste, Apprentissage Automatique.
 
 
@@ -31,10 +31,10 @@ Maths
 Formation
 ---------
 
-2014-2017 
+2014-octobre 2017 
 :   **Thèse en maths appliquées**; TIMC-IMAG, La Tronche (38)
 
-    *Titre de la thèse: Méthodes d'apprentissage statistique pour les tests
+    *Méthodes d'apprentissage statistique pour les tests
     d'association écologique*
      
 
@@ -51,7 +51,7 @@ Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38)
 Expériences professionnelles
 -------------------------------
 
-2014-2017
+2014-octobre 2017
 : **Thèse en maths appliquées.** 
 Les manières de représenter la santé et le vivant ont considérablement changé
 durant ces dernières années, et les nouvelles représentations font appel à la
@@ -59,13 +59,17 @@ collecte de données massives. De telles représentations concernent plus
 particulièrement les données épidémiologiques et démographiques, ainsi que les
 données biologiques issues de plates-formes à haut débit. L'objectif de cette
 thèse est de développer les méthodes qui permetent de detecter les signatures
-d'association entre variables dans telless données. En particulier nous nous
+d'association entre variables dans de telles données. En particulier nous nous
 interessons aux modèles basées sur des problèmes d'optimisation faisant
 intervenir des factorisations matricielles.
 
 2014-2016
-:     **Enseignement.**
-Deux ans de monitorat à l'UGA (Université de Grenoble Alpes) en L1.
+: **Enseignement.** Deux ans de monitorat à l'UGA (Université de Grenoble Alpes)
+en L1. Matières Enseignées: 
+: - TP de découverte des mathématiques appliquées
+  - TD de soutien de mathématiques
+  - Cours/TP de modélisation dynamique en biologie
+
 
 
 Février-Août 2014 
@@ -85,29 +89,34 @@ Publications
 
 **Fast Inference of Individual Admixture Coefficients Using Geographic Data**\
 Kevin Caye, Flora Jay, Olivier Michel, Olivier François\
-*bioRxiv*; doi: http://dx.doi.org/10.1101/080291 
+*bioRxiv*; doi: [10.1101/080291](http://dx.doi.org/10.1101/080291) 
 
 
 **Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics**\
 Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier François\
-*bioRxiv*; doi: http://dx.doi.org/10.1101/054585
+*bioRxiv*; doi: [10.1101/054585](http://dx.doi.org/10.1101/054585)
 
 
 **Controlling false discoveries in genome scans for selection**\
 Olivier François, Helena Martins, Kevin Caye, Sean D. Schoville\
-*Molecular ecology*, 2016, vol. 25, no 2, p. 454-469; doi: http://dx.doi.org/10.1111/mec.13513
+*Molecular ecology*, 2016, vol. 25, no 2, p. 454-469; doi: [10.1111/mec.13513](http://dx.doi.org/10.1111/mec.13513)
 
 **TESS3: fast inference of spatial population structure and genome scans for selection**\
 Kevin Caye, Timo M. Deist, Helena Martins, Olivier François\
-*Molecular ecology resources*, 2016, vol. 16, no 2, p. 540-548; doi: http://dx.doi.org/10.1111/1755-0998.12471
+*Molecular ecology resources*, 2016, vol. 16, no 2, p. 540-548; doi: [10.1111/1755-0998.12471](http://dx.doi.org/10.1111/1755-0998.12471)
 
 
 Centre d'interêt
 ----------------------------------------
 
 Sports
-: Karaté Kyokushin en compétition et sport de montagne (ski, randonnées,
-trecking, trail, raid multisports).
+: Karaté Kyokushin en compétition, raid multipsort par équipe en conpetition et
+sport de montagne (ski, randonnées, trecking, trail).
+
+Associatif
+: Membre du bureau des sports de l'ENSIMAG en 2012-2013. Bénévole dans un projet
+de construction d'une bibliothèque à Caral au Pérou dans l'association étudiante
+solida'rire.
 
 Références
 ----------------------------------------

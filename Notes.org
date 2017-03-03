@@ -1,17 +1,17 @@
 * Task 
 ** TODO resume
    Dans l'ordre : 
-   - anglais lu ecrit parlé
-   - maths -> mathématique
-   - titre de thèse on enlève et mettre date prévue de submit
-   - mention sur diplome
-   - matières enseignées
-   - pb de temps dans les descriptions + relire les descriptions
-   - liens clicable dans publis
-   - sport: mettre raid par en compétition
-   - associatif : bds et solidarire
-   - voyage
-   - prévenir evertonn et OF
+   - [X] anglais lu ecrit parlé
+   - [X] maths -> mathématique
+   - [X] titre de thèse on enlève et mettre date prévue de submit
+   - [ ] mention sur diplome
+   - [X] matières enseignées
+   - [ ] pb de temps dans les descriptions + relire les descriptions
+   - [X] liens clicable dans publis
+   - [X] sport: mettre raid par en compétition
+   - [X] associatif : bds et solidarire
+   - [ ] voyage
+   - [ ] prévenir evertonn et OF
 
 ** TODO sites
    - [ ] lien mort dans talk
