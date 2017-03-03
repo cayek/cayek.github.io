@@ -1,25 +1,30 @@
 Madame, Monsieur.
 
-Je suis actuellement en troisième année de thèse de Mathématiques appliquées
+Je suis actuellement en troisième année de thèse de mathématiques appliquées
 qui se terminera en Octobre 2017. Diplomé de l'ENSIMAG, j'ai toujours été
-passioné d'informatique et de Mathématiques. Lors de ma thèse spécialisée dans
+passionné d'informatique et de mathématiques. Lors de ma thèse spécialisée dans
 le developpement de méthodes statistiques pour la biologie j'ai pu développer
 ces deux compétences. En effet, je travaille actuellement sur des méthodes
 d'optimisation et de modélisasion statistique. Ces méthodes doivent fonctionner
 sur des données réelles issues de la biologie. Il est donc impératif d'en faire
-une implémenation efficace et livrable à la communauté scientifique.
+une implémentation efficace et livrable à la communauté scientifique.
  
 
 L'entreprise Probayes, mettant l'informatique et les mathématiques appliquées au
 service de l'exploitation des données, a donc naturellement attiré mon
-attention. J'ai été attiré par la multide des projects sur lesquels Probayes
-intervient. Ces projets vont de l'analyse prédictive pour les entreprises à
-l'optimisation de la gestion de l'energie.
+attention. J'ai été interpelé par la multitude des projets sur lesquels Probayes
+intervient. Ces derniers vont de l'analyse prédictive pour les entreprises à
+l'optimisation de la gestion de l'énergie.
 
-Ainsi travailler dans votre entrprise me permettrait d'approfondir mes
-connaissances en science des donnnées sur des problèmes concrets passionants. De
-plus je pense que les compétences acquises pendant ma thèse sont parfaitement
-adaptées pour ce poste. 
+
+Ainsi, travailler dans votre entreprise me permettrait d'approfondir mes
+connaissances en science des donnnées sur des problèmes concrets et
+passionnants. De plus je pense que mes compétences acquises pendant ma thèse en
+développement informatique, optimisation et modélisation statistique sont
+adaptées à un eventuel poste d'ingénieur R&D en science des données. Enfin,
+je suis très motivé à l'idée de travailler dans une entreprise à taille humaine
+telle que la votre.
+
 
 Dans l’attente de vous rencontrer lors d’un futur entretien, je vous prie
 d’agréer, Madame, Monsieur, l’expression de mes respectueuses salutations.
