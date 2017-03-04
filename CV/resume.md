@@ -11,11 +11,6 @@ Kevin Caye
 
 Compétences
 ------------
-Langues
-: **Anglais :** bon niveau (lu, écrit, parlé). 
-
-: **Espagnol :** niveau moyen (lu, écrit, parlé).
-
 Informatique
 :  **Programmation :** R, python, C/C++, SQL.
 
@@ -23,16 +18,21 @@ Informatique
 
 : **Outils :** Emacs, Org mode, Git, RStudio, Jupyter.
 
-Mathématiques
+Maths
 : Optimisation, Statistiques, Modélisation Probabiliste, Apprentissage Automatique.
+
+Langues
+: **Anglais :** bon niveau (lu, écrit, parlé). 
+
+: **Espagnol :** niveau moyen (lu, écrit, parlé).
 
 
 
 Formation
 ---------
 
-2014-octobre 2017 
-:   **Thèse en maths appliquées**; TIMC-IMAG, La Tronche (38)
+2014-oct. 2017 
+:   **Thèse en mathématiques appliquées**; TIMC-IMAG, La Tronche (38)
 
     *Méthodes d'apprentissage statistique pour les tests
     d'association écologique*
@@ -46,41 +46,40 @@ Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38)
     
     
 2008-2011 
-:  **Classe préparatoire MPSI/MP\***; lycés Albert schweitzer, Le Raincy (93)
+:  **Classe préparatoire MPSI/MP\***; lycée Albert schweitzer, Le Raincy (93)
 
 Expériences professionnelles
 -------------------------------
 
-2014-octobre 2017
-: **Thèse en maths appliquées.** 
-Les manières de représenter la santé et le vivant ont considérablement changé
-durant ces dernières années, et les nouvelles représentations font appel à la
-collecte de données massives. De telles représentations concernent plus
-particulièrement les données épidémiologiques et démographiques, ainsi que les
-données biologiques issues de plates-formes à haut débit. L'objectif de cette
-thèse est de développer les méthodes qui permetent de detecter les signatures
-d'association entre variables dans de telles données. En particulier nous nous
-interessons aux modèles basées sur des problèmes d'optimisation faisant
-intervenir des factorisations matricielles.
+2014-oct. 2017
+: **Thèse en mathématiques appliquées.** Les manières de représenter la santé et
+le vivant ont considérablement changé durant ces dernières années. Ces nouvelles
+représentations sont basées sur la collecte de données massives, et plus
+particulièrement de données épidémiologiques, démographiques et biologiques
+issues de plates-formes à haut débit. L'objectif de cette thèse est de
+développer des méthodes permettant de détecter des signatures d'association
+entre variables dans de telles données. Nous nous intéressons notamment
+aux modèles basées sur des problèmes d'optimisation faisant intervenir des
+factorisations matricielles.
 
 2014-2016
-: **Enseignement.** Deux ans de monitorat à l'UGA (Université de Grenoble Alpes)
-en L1. Matières Enseignées: 
+: **Enseignement.** Deux ans de monitorat à l'Université Grenoble Alpes en L1.
+Matières Enseignées:
 : - TP de découverte des mathématiques appliquées
   - TD de soutien de mathématiques
-  - Cours/TP de modélisation dynamique en biologie
+  - Cours/TP de modélisation de  la dynamique en biologie
 
 
 
 Février-Août 2014 
-: **Stage recherche et developement à Dassault Système, Vélize-Villacoublay
-(78).** 
+: **Stage recherche et developement**; Dassault Systèmes, Vélizy-Villacoublay
+(78). 
 Dans le département *Science and Corporate Research*, le stage consistait à
-faire un état de l'art des méthodes de simulation 3D basées sur des exemples. Il
-fallait par la suite implémenter un prototype à l'aide d'openGL et C++.
+faire un état de l'art des méthodes de simulation 3D basées sur des exemples.
+Par la suite un prototype a été implémenté à l'aide d'OpenGL et C++.
 
-Juillet-Aout 2013
-: **Stage ingénieur R&D à l'INRIA Montbonnot (38).** 
+Juillet-Août 2013
+: **Stage ingénieur R&D **; INRIA, Montbonnot (38). 
 Dans l'équipe MAVERICK, le stage consistait à implementer des techniques de
 rendu 3D à l'aide de la bibliothèque Gigavoxel (C++, GLSL, CUDA).
 
@@ -106,17 +105,17 @@ Kevin Caye, Timo M. Deist, Helena Martins, Olivier François\
 *Molecular ecology resources*, 2016, vol. 16, no 2, p. 540-548; doi: [10.1111/1755-0998.12471](http://dx.doi.org/10.1111/1755-0998.12471)
 
 
-Centre d'interêt
+Centres d'intérêt
 ----------------------------------------
 
 Sports
-: Karaté Kyokushin en compétition, raid multipsort par équipe en conpetition et
-sport de montagne (ski, randonnées, trecking, trail).
+: Karaté Kyokushin en compétition, raid multipsort par équipe en compétition et
+sport de montagne (ski, randonnées, trekking, trail).
 
 Associatif
-: Membre du bureau des sports de l'ENSIMAG en 2012-2013. Bénévole dans un projet
+: Membre du bureau des sports de l'ENSIMAG (2012-2013). Bénévole dans un projet
 de construction d'une bibliothèque à Caral au Pérou dans l'association étudiante
-solida'rire.
+solida'rire (2011-2012).
 
 Références
 ----------------------------------------
@@ -127,7 +126,7 @@ Références
   recherche CNRS rattaché au laboratoire TIMC-IMAG et responsable de l'équipe
   BCM (La Tronche, France)
 
-* [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingenieur de recherche à Dassault Systemes (Vélizy-Villacoublay, France)
+* [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingénieur de recherche à Dassault Systèmes (Vélizy-Villacoublay, France)
 
 
 ----

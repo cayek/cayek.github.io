@@ -1,9 +1,9 @@
 Madame, Monsieur.
 
 Je suis actuellement en troisième année de thèse de mathématiques appliquées
-qui se terminera en Octobre 2017. Diplomé de l'ENSIMAG, j'ai toujours été
+qui se terminera en Octobre 2017. Diplômé de l'ENSIMAG, j'ai toujours été
 passionné d'informatique et de mathématiques. Lors de ma thèse spécialisée dans
-le developpement de méthodes statistiques pour la biologie j'ai pu développer
+le developpement de méthodes statistiques pour la biologie, j'ai approfondi
 ces deux compétences. En effet, je travaille actuellement sur des méthodes
 d'optimisation et de modélisasion statistique. Ces méthodes doivent fonctionner
 sur des données réelles issues de la biologie. Il est donc impératif d'en faire
@@ -20,10 +20,9 @@ l'optimisation de la gestion de l'énergie.
 Ainsi, travailler dans votre entreprise me permettrait d'approfondir mes
 connaissances en science des donnnées sur des problèmes concrets et
 passionnants. De plus je pense que mes compétences acquises pendant ma thèse en
-développement informatique, optimisation et modélisation statistique sont
-adaptées à un eventuel poste d'ingénieur R&D en science des données. Enfin,
-je suis très motivé à l'idée de travailler dans une entreprise à taille humaine
-telle que la votre.
+développement informatique, optimisation et modélisation statistique seraient
+adaptées à un poste d'ingénieur R&D. Enfin, je suis très motivé à l'idée de
+travailler dans une entreprise à taille humaine telle que la votre.
 
 
 Dans l’attente de vous rencontrer lors d’un futur entretien, je vous prie
