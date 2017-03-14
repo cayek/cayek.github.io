@@ -4,14 +4,25 @@
    - [X] anglais lu ecrit parlé
    - [X] maths -> mathématique
    - [X] titre de thèse on enlève et mettre date prévue de submit
-   - [ ] mention sur diplome
+   - [X] mention sur diplome
    - [X] matières enseignées
-   - [ ] pb de temps dans les descriptions + relire les descriptions
+   - [X] pb de temps dans les descriptions + relire les descriptions
    - [X] liens clicable dans publis
    - [X] sport: mettre raid par en compétition
    - [X] associatif : bds et solidarire
-   - [ ] voyage
+   - [X] voyage
    - [ ] prévenir evertonn et OF
 
 ** TODO sites
    - [ ] lien mort dans talk
+** TODO Blog
+   Tout mettre dans un même projet ! Pour partager le css. Et on va laisser
+   tomber jekyll ! Tout avec un makefile :D
+
+   C'est un peu à l'arrache mais les source sont dans blogJekyll et je compile
+   le site site dans blog :D
+
+   En fait non, pour le moment c'est trop a l'arache. Je ferrais autrement le
+   moment venu !! orgmode ? 
+** TODO css
+   Le custum un peut, on va recuperer les class de [[file:CV/style_chmduquesne.css]]
