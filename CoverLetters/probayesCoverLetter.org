@@ -1,3 +1,36 @@
+#+TITLE:
+#+OPTIONS: author:nil date:nil title:nil toc:nil
+#+LATEX_CLASS: article
+#+LATEX_HEADER: \pagestyle{empty}
+
+#+BEGIN_EXPORT latex
+\begin{flushleft}
+ {\bfseries M. Kevin Caye}\\[.35ex]
+ \small\itshape
+ 18 rue du pont Prouiller\\
+ 38700 LA TRONCHE\\[.35ex]
+ +33 6 19 45 11 46\\
+ kevin.caye@univ-grenoble-alpes.fr
+ \end{flushleft}
+ %
+ \begin{flushright}
+ {\bfseries TRIXELL\\Mme Marine SAINT JALMES}\\[.35ex]
+ \small\itshape
+ 460 rue du Pommarin\\
+ 38430 MOIRANS
+ \end{flushright}
+ %
+ \hfill
+ %
+ \begin{flushright}
+ À La Tronche, le 14 Mars 2017
+ \end{flushright}
+ 
+  \begin{flushleft}	
+ \textbf{Objet : }
+ \end{flushleft}
+#+END_EXPORT 
+
 Madame, Monsieur.
 
 Je suis actuellement en troisième année de thèse de mathématiques appliquées
