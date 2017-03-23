@@ -65,11 +65,11 @@ factorisations matricielles.
 
 
 2014-2016
-: **Enseignement.** Deux ans de monitorat à l'Université Grenoble Alpes en L1.
-Matières Enseignées:
+: **Enseignement.** Deux ans de monitorat à l'Université Grenoble Alpes en L1 :
 : - TP de découverte des mathématiques appliquées
   - TD de soutien de mathématiques
   - Cours/TP de modélisation de  la dynamique en biologie
+: Encadrement de projet à l'ensimag.
 
 
 
