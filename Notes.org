@@ -1,5 +1,32 @@
+# -*- mode: org -*-
+# -*- coding: utf-8 -*-
+#+STARTUP: overview indent inlineimages logdrawer
+#+TITLE:       Notes for my website
+#+AUTHOR:      Kevin Caye
+#+LANGUAGE:    en
+#+TAGS: noexport(n)
+#+EXPORT_SELECT_TAGS: Blog
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+COLUMNS: %25ITEM %TODO %3PRIORITY %TAGS
+#+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) RUNNING(r!) APPT(a!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
+
+
 * Task 
+** TODO On passe a orgmode ;D
+:LOGBOOK:
+- State "TODO"       from "TODO"       [2017-04-14 ven. 14:37]
+:END:
+
+*** Sources
+- [[https://github.com/ardumont/org2jekyll][org2jekyll]]: son blog est pas mal.
+- org mode with jekyll, plus simple: [[http://orgmode.org/worg/org-tutorials/org-jekyll.html][wrog]] 
 ** TODO resume
+:LOGBOOK:
+- State "TODO"       from "TODO"       [2017-04-14 ven. 14:46]
+:END:
    Dans l'ordre : 
    - [X] anglais lu ecrit parlé
    - [X] maths -> mathématique
@@ -14,8 +41,14 @@
    - [ ] prévenir evertonn et OF
 
 ** TODO sites
+:LOGBOOK:
+- State "TODO"       from "TODO"       [2017-04-14 ven. 14:46]
+:END:
    - [ ] lien mort dans talk
 ** TODO Blog
+:LOGBOOK:
+- State "TODO"       from "TODO"       [2017-04-14 ven. 14:46]
+:END:
    Tout mettre dans un même projet ! Pour partager le css. Et on va laisser
    tomber jekyll ! Tout avec un makefile :D
 
@@ -25,4 +58,7 @@
    En fait non, pour le moment c'est trop a l'arache. Je ferrais autrement le
    moment venu !! orgmode ? 
 ** TODO css
+:LOGBOOK:
+- State "TODO"       from "TODO"       [2017-04-14 ven. 14:46]
+:END:
    Le custum un peut, on va recuperer les class de [[file:CV/style_chmduquesne.css]]
