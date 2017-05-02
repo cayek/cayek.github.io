@@ -65,11 +65,11 @@ factorisations matricielles.
 
 
 2014-2016
-: **Enseignement.** Deux ans de monitorat à l'Université Grenoble Alpes en L1 :
-: - TP de découverte des mathématiques appliquées
-  - TD de soutien de mathématiques
-  - Cours/TP de modélisation de  la dynamique en biologie
-: Encadrement de projet à l'ensimag.
+: **Enseignement.** Deux ans de monitorat :
+: - TP de découverte des mathématiques appliquées en L1 à l'UGA
+  - TD de soutien de mathématiques en L1 à l'UGA
+  - Cours/TP de modélisation de  la dynamique en biologie en L1 à l'UGA
+  - Encadrement de projet de science des données en M1 à l'ENSIMAG
 
 
 
