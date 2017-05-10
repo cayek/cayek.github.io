@@ -129,7 +129,7 @@ Références
   recherche CNRS rattaché au laboratoire TIMC-IMAG et responsable de l'équipe
   BCM (La Tronche, France)
 
-* [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingénieur de recherche à Dassault Systèmes (Vélizy-Villacoublay, France)
+<!-- * [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingénieur de recherche à Dassault Systèmes (Vélizy-Villacoublay, France) -->
 
 
 ----
