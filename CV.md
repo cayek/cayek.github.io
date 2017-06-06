@@ -33,10 +33,11 @@ Formation
 ---------
 
 2014-oct. 2017 
-:   **Thèse en mathématiques appliquées**; TIMC-IMAG, La Tronche (38)
+:   **Thèse en mathématiques appliquées**; TIMC-IMAG, La Tronche (38) et
+Gipsa-lab, Saint Martin D'hères (38)
 
-    *Méthodes d'apprentissage statistique pour les tests
-    d'association écologique*
+    *Méthodes de factorisation matricielle pour la génomique des populations et
+    les tests d'association*
      
 
 2011-2014
