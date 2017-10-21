@@ -14,9 +14,9 @@ Compétences
 
 
 Informatique
-:  **Programmation :** R, python, C/C++, SQL.
+:  **Programmation :** R, C/C++, python, SQL.
 : **OS :** Linux, OS X.
-: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter.
+: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Méthodologie Agile.
 
 
 Maths
@@ -92,7 +92,7 @@ Publications
 
 **Fast Inference of Individual Admixture Coefficients Using Geographic Data**\
 Kevin Caye, Flora Jay, Olivier Michel, Olivier François\
-*bioRxiv*; doi: [10.1101/080291](http://dx.doi.org/10.1101/080291) 
+*The Annals of Applied Statistics* 
 
 
 **Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics**\
