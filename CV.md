@@ -75,7 +75,7 @@ factorisations matricielles.
 
 
 Février-Août 2014 
-: **Stage recherche et developement**; Dassault Systèmes, Vélizy-Villacoublay
+: **Stage recherche et développement**; Dassault Systèmes, Vélizy-Villacoublay
 (78). 
 Dans le département *Science and Corporate Research*, le stage consistait à
 faire un état de l'art des méthodes de simulation 3D basées sur des exemples.
@@ -84,7 +84,7 @@ Par la suite un prototype a été implémenté à l'aide d'OpenGL et C++.
 
 Juillet-Août 2013
 : **Stage ingénieur R&D **; INRIA, Montbonnot (38). 
-Dans l'équipe MAVERICK, le stage consistait à implementer des techniques de
+Dans l'équipe MAVERICK, le stage consistait à implémenter des techniques de
 rendu 3D à l'aide de la bibliothèque Gigavoxel (C++, GLSL, CUDA).
 
 Publications
