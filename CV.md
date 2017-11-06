@@ -14,9 +14,9 @@ Compétences
 
 
 Informatique
-:  **Programmation :** R, python, C/C++, SQL.
+:  **Programmation :** R, C/C++, python, SQL.
 : **OS :** Linux, OS X.
-: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker.
+: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker, Méthodologie Agile.
 
 
 Maths
@@ -33,10 +33,11 @@ Formation
 ---------
 
 2014-oct. 2017 
-:   **Thèse en mathématiques appliquées**; TIMC-IMAG, La Tronche (38)
+:   **Thèse en mathématiques appliquées**; TIMC-IMAG, La Tronche (38) et
+Gipsa-lab, Saint Martin D'hères (38)
 
-    *Méthodes d'apprentissage statistique pour les tests
-    d'association écologique*
+    *Méthodes de factorisation matricielle pour la génomique des populations et
+    les tests d'association*
      
 
 2011-2014
@@ -74,7 +75,7 @@ factorisations matricielles.
 
 
 Février-Août 2014 
-: **Stage recherche et developement**; Dassault Systèmes, Vélizy-Villacoublay
+: **Stage recherche et développement**; Dassault Systèmes, Vélizy-Villacoublay
 (78). 
 Dans le département *Science and Corporate Research*, le stage consistait à
 faire un état de l'art des méthodes de simulation 3D basées sur des exemples.
@@ -83,7 +84,7 @@ Par la suite un prototype a été implémenté à l'aide d'OpenGL et C++.
 
 Juillet-Août 2013
 : **Stage ingénieur R&D **; INRIA, Montbonnot (38). 
-Dans l'équipe MAVERICK, le stage consistait à implementer des techniques de
+Dans l'équipe MAVERICK, le stage consistait à implémenter des techniques de
 rendu 3D à l'aide de la bibliothèque Gigavoxel (C++, GLSL, CUDA).
 
 Publications
@@ -91,7 +92,7 @@ Publications
 
 **Fast Inference of Individual Admixture Coefficients Using Geographic Data**\
 Kevin Caye, Flora Jay, Olivier Michel, Olivier François\
-*bioRxiv*; doi: [10.1101/080291](http://dx.doi.org/10.1101/080291) 
+*The Annals of Applied Statistics* 
 
 
 **Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics**\
