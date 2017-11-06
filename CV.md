@@ -16,7 +16,7 @@ Compétences
 Informatique
 :  **Programmation :** R, python, C/C++, SQL.
 : **OS :** Linux, OS X.
-: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter.
+: **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker.
 
 
 Maths
