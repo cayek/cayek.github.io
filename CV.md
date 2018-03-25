@@ -1,10 +1,9 @@
 Kevin Caye
 ============
-
 ----
 
-> Computer Science - Statistics - Machine Learning - Optimization -
->   Data Visualization
+> Computer Science - Statistics - Machine Learning
+> Optimization - Data Visualization - Operational Research 
 
 ----
 
@@ -14,13 +13,13 @@ Compétences
 
 
 Informatique
-:  **Programmation :** R, C/C++, python, SQL.
-: **OS :** Linux, OS X.
+:  **Programmation :** R, python, C/C++, SQL.
+: **OS :** Linux, OS X, Windows.
 : **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker, Méthodologie Agile.
 
 
 Maths
-: Optimisation, Statistiques, Modélisation Probabiliste, Apprentissage Automatique.
+: Optimisation, Statistiques, Modélisation Probabiliste, Apprentissage Automatique, Recherche Opérationnelle.
 
 
 Langues
@@ -53,6 +52,14 @@ Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38)
 Expériences professionnelles
 -------------------------------
 
+2017-nov. Aujourd'hui
+: **Prestataire de service**; Kaizen Solutions, Meylan (38). Ma mission se déroule au sein
+  de l'équipe de recherche et développement "Analytics Applications and
+  Programs" de Schneider Electric. Cette équipe est en charge du développement
+  d'algorithmes et de programmes pour l'analyse de données (consommation
+  énergétique de bâtiments, détection de fautes sur des équipements électriques,
+  ...).
+  
 2014-oct. 2017
 : **Thèse en mathématiques appliquées.** Les manières de représenter la santé et
 le vivant ont considérablement changé durant ces dernières années. Ces nouvelles
@@ -64,15 +71,12 @@ entre variables dans de telles données. Nous nous intéressons notamment
 aux modèles basées sur des problèmes d'optimisation faisant intervenir des
 factorisations matricielles.
 
-
 2014-2016
 : **Enseignement.** Deux ans de monitorat :
 : - TP de découverte des mathématiques appliquées en L1 à l'UGA
   - TD de soutien de mathématiques en L1 à l'UGA
   - Cours/TP de modélisation de  la dynamique en biologie en L1 à l'UGA
   - Encadrement de projet de science des données en M1 à l'ENSIMAG
-
-
 
 Février-Août 2014 
 : **Stage recherche et développement**; Dassault Systèmes, Vélizy-Villacoublay
@@ -94,15 +98,9 @@ Publications
 Kevin Caye, Flora Jay, Olivier Michel, Olivier François\
 *The Annals of Applied Statistics* 
 
-
 **Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics**\
 Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier François\
 *bioRxiv*; doi: [10.1101/054585](http://dx.doi.org/10.1101/054585)
-
-
-**Controlling false discoveries in genome scans for selection**\
-Olivier François, Helena Martins, Kevin Caye, Sean D. Schoville\
-*Molecular ecology*, 2016, vol. 25, no 2, p. 454-469; doi: [10.1111/mec.13513](http://dx.doi.org/10.1111/mec.13513)
 
 **TESS3: fast inference of spatial population structure and genome scans for selection**\
 Kevin Caye, Timo M. Deist, Helena Martins, Olivier François\
@@ -111,15 +109,12 @@ Kevin Caye, Timo M. Deist, Helena Martins, Olivier François\
 
 Centres d'intérêt
 ----------------------------------------
-
 Sports
 : Karaté Kyokushin en compétition, raid multipsort par équipe en compétition et
 sport de montagne (ski, randonnées, trekking, trail).
 
-Associatif
-: Membre du bureau des sports de l'ENSIMAG (2012-2013). Bénévole dans un projet
-de construction d'une bibliothèque à Caral au Pérou dans l'association étudiante
-solida'rire (2011-2012).
+Autres
+: Participation à des concours de mathématiques appliquées.
 
 Références
 ----------------------------------------
@@ -131,7 +126,6 @@ Références
   BCM (La Tronche, France)
 
 <!-- * [Everton Hermann](https://www.linkedin.com/in/everton-hermann-59908a6/), ingénieur de recherche à Dassault Systèmes (Vélizy-Villacoublay, France) -->
-
 
 ----
 
