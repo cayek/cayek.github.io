@@ -27,7 +27,6 @@ Langues
 : **Espagnol :** niveau moyen (lu, écrit, parlé).
 
 
-
 Formation
 ---------
 
