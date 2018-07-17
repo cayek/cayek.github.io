@@ -7,6 +7,12 @@ resume.pdf: resume.md
 	-V papersize=A4 \
 	-o resume.tex resume.md; \
 	context resume.tex
+resume_en.pdf: resume_en.md
+	pandoc --standalone --template style_chmduquesne.tex \
+	--from markdown --to context \
+	-V papersize=A4 \
+	-o resume_en.tex resume_en.md; \
+	context resume_en.tex
 
 html: resume.html
 resume.html: style_chmduquesne.css resume.md

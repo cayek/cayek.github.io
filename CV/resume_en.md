@@ -48,32 +48,32 @@ Professional Experience
 -------------------------------
 
 2017-nov. Today
-: **Service Provider.**; Kaizen Solutions, Meylan (38). My mission takes
-  place within the research and development team "Analytics Applications and
-  Programs" of Schneider Electric. This team is in charge of developing algorithms
-  and programs for data analysis (energy consumption of buildings, detection of
+: **Service Provider.**; Kaizen Solutions, Meylan (38). I am currently working
+  within the research and development team "Analytics Applications and Programs"
+  of Schneider Electric. This team is in charge of developing algorithms and
+  programs for data analysis (energy consumption of buildings, detection of
   faults on electrical equipment, etc.).
   
 2014-oct. 2017
 : **Applied mathematics phd.** Ways to represent health and the living have
 changed considerably in recent years. The news representations are based on
-massive data collection, and more especially epidemiological, demographic and
-biological data from high-speed platforms. The objective of this thesis is to
-develop methods aiming to detect associations between variables in such dataset.
-In particular, we are interested in models based on optimization problems based
-on matrix factorizations.
+massive data collection coming from high throughput sequencing technologies. The
+objective of this thesis was to develop methods to detect associations between
+variables in such biological data. More especially, we were interested in
+statistical modeling based on optimization problems based on matrix
+factorizations.
 
 2014-2016
 : **Teaching.**
-: - Discovering mathematics session for L1 students at l'UGA
-  - Mathematics support courses for L1 student at l'UGA
-  - Population dynamics for L1 student at l'UGA
+: - Mathematics beginner courses for L1 students at UGA
+  - Mathematics support courses for L1 student at UGA
+  - Population dynamics courses for L1 student at UGA
   - End of year data science project for M1 student at l'ENSIMAG
 
 Février-Août 2014 
 : **Research and development internship**; Dassault Systèmes,
 Vélizy-Villacoublay (78). 
-: In the Science and Corporate Research* team, I make a scientific literature
+: In the Science and Corporate Research* team, I made a scientific literature
 review of the 3D simulation methods based on examples. Then I implemented a
 prototype using OpenGL and C++.
 

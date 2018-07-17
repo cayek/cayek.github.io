@@ -129,5 +129,5 @@ Références
 ----
 
 > <kevin.caye@gmail.com> • +33 6 19 45 11 46 • 28 ans\
-> 18 rue du pont prouiller - La Tronche 38700, France\
+> 1 rue du tenaison - Saint-Egrève 38120, France\
 > <https://cayek.github.io/>
