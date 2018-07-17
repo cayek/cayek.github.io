@@ -11,7 +11,7 @@ skills
 -------
 
 Computer science
-: **Programming :** R, python, C/C++, scala.
+: **Programming :** R, python, C/C++, scala (beginner).
 : **OS :** Linux, OS X
 : **Tools :** Emacs, Org-mode, Git, Rstudio, Jupyter, Docker.
 
