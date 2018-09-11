@@ -13,7 +13,7 @@ Compétences
 
 
 Informatique
-:  **Programmation :** R, python, C/C++, SQL.
+:  **Programmation :** R, python, C/C++, Scala, SQL.
 : **OS :** Linux, OS X, Windows.
 : **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker, Méthodologie Agile.
 
@@ -41,9 +41,6 @@ Gipsa-lab, Saint Martin D'hères (38)
 2011-2014
 : **Diplôme d'ingénieur en informatique et mathématiques appliquées**;
 Grenoble-INP, ENSIMAG, Saint-Martin D'Heres (38) 
-
-    *Filière : MMIS (Modélisation Mathématique, Image et Simulation)*
-    
     
 2008-2011 
 :  **Classe préparatoire MPSI/MP\***; lycée Albert schweitzer, Le Raincy (93)
