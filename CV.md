@@ -13,7 +13,7 @@ Compétences
 
 
 Informatique
-:  **Programmation :** R, python, C/C++, Scala, SQL.
+: **Programmation :** R, python (scikit-learn, TensorFlow), C/C++, Cuda, Scala, SQL.
 : **OS :** Linux, OS X, Windows.
 : **Outils :** Emacs, Org mode, Git, RStudio, Jupyter, Docker, Méthodologie Agile.
 
