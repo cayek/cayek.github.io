@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+# -*- mode: org -*-
+
+#+TITLE: Le génie logiciel pour un ingénieur en science des données
+#+AUTHOR: Kévin CAYE
+#+LANGUAGE: fr
+
+# reveal
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_TRANS: none
+#+OPTIONS: reveal_center:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_THEME: white
+#+REVEAL_HLEVEL: 0 ## all header on same lvl
+#+REVEAL_SPEED: fast
+
+Faire un peut en mode time line
+- sorti de l'ensimag: git et c++
+- thèse: programmation fonctionnel
+- prestation: mise en production par des web service
+Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
+
+* Mon parcourt
+* La programmation objets
+
+* La programmation fonctionnelle
+:LOGBOOK:
+- Note taken on [2018-10-26 Fri 15:58] \\
+  read that https://stackoverflow.com/questions/4852251/is-there-a-software-engineering-methodology-for-functional-programming
+:END:
+- définir
+- pourquoi c'est autant utilisé ?
+- Vous faite du R ?
+* Intégration continue
