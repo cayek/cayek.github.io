@@ -5,7 +5,7 @@
 #+AUTHOR: Kévin CAYE
 #+LANGUAGE: fr
 
-# reveal
+# reveal options: see https://github.com/yjwen/org-reveal
 #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 #+REVEAL_TRANS: none
 #+OPTIONS: reveal_center:nil
@@ -13,7 +13,10 @@
 #+REVEAL_THEME: white
 #+REVEAL_HLEVEL: 0 ## all header on same lvl
 #+REVEAL_SPEED: fast
+#+REVEAL_EXTRA_CSS: ./extra.css
+#+REVEAL_EXTRA_JS: 
 
+* TODO TODO                                                        :noexport:
 Faire un peut en mode time line
 - sorti de l'ensimag: git et c++
 - thèse: programmation fonctionnel
@@ -21,9 +24,81 @@ Faire un peut en mode time line
 Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 
 * Mon parcourt
-* La programmation objets
-
-* La programmation fonctionnelle
+:LOGBOOK:
+- Note taken on [2018-11-13 Tue 16:56] \\
+  where to code come https://freefrontend.com/css-timelines/#horizontal-timelines
+- Note taken on [2018-11-13 Tue 16:56] \\
+  make an html iframe
+:END:
+#+BEGIN_EXPORT html
+<section class="timeline">
+  <ol>
+    <li>
+      <div>
+        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li></li>
+  </ol>
+#+END_EXPORT
+* La programmation orienté objet
+* La programmation orienté objet
+* La programmation fonctionnelle: Définition
 :LOGBOOK:
 - Note taken on [2018-10-26 Fri 15:58] \\
   read that https://stackoverflow.com/questions/4852251/is-there-a-software-engineering-methodology-for-functional-programming
@@ -31,4 +106,5 @@ Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 - définir
 - pourquoi c'est autant utilisé ?
 - Vous faite du R ?
+* La programmation fonctionnelle: 
 * Intégration continue
