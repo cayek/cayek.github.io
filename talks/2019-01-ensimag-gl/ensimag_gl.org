@@ -16,11 +16,37 @@
 #+REVEAL_EXTRA_CSS: ./extra.css
 #+REVEAL_EXTRA_JS: 
 
+Objectif: montrer les différents cas de figure que j'ai rencontrer pour dans mon
+expérience. Je ne veux pas etre exhaustif mais peut être que mon expérience
+pourra vous aider dans des situations similaires.
+
+Commencer par mon profile et mes attentes dans mon boulot. Présenter mes
+expérience avec leur contexte, les problèmes et les solutions apporté. point
+clée:
+- développer des méthodes mathématiques (stage fin d'étude)
+  - première erreur: le c++ c'est super rapide dont je dev en c++. chercher à
+    optimiser trop tôt
+  - j'itère sans faire de test: on sait rapidement plus ou on en ai ! Même quand
+    on dev un prototype c'est pas pour de la production ! il faut faire des
+    tests ! au moins sur le coeur algorithmique. Pas des test unitaires plutôt
+    tester des situations.
+- thèses: 
+  - les model en data sciences
+    - les données: idéal avoir 3 niveaux model génératif, model simulé mais plus
+      compliqué, données réelles
+  - la programmation en data science: fonctionnel
+    - faire une comparaison d'un model implémenté en object et un en fonctionnel ?
+  - La reproductibilité en science
+- Schneider electric
+  - devops
 * TODO TODO                                                        :noexport:
 Faire un peut en mode time line
+- définir science des données
 - sorti de l'ensimag: git et c++
 - thèse: programmation fonctionnel
 - prestation: mise en production par des web service
+- present the service oriented Architechture: [[https://en.wikipedia.org/wiki/Service-oriented_architecture][wikipedia
+]]  - Pourquoi on fait ca dans l'équipe AAI (présenter l'équipe AAI)
 Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 
 * Mon parcourt
