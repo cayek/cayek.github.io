@@ -9,10 +9,11 @@
 #+REVEAL_ROOT: file:/home/cayek/.src/reveal.js
 #+REVEAL_TRANS: none
 #+REVEAL_PLUGINS: (highlight notes)
-#+OPTIONS: reveal_center:nil num:nil toc:nil
+#+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil toc:nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
 #+REVEAL_THEME: white
-#+REVEAL_HLEVEL: 0 ## all header on same lvl
+#+REVEAL_HLEVEL: 1 ## all header on same lvl
 #+REVEAL_SPEED: fast
 #+REVEAL_EXTRA_CSS: ./extra.css
 #+REVEAL_EXTRA_JS: 
@@ -76,7 +77,7 @@ clée:
 
 * Qui je suis ?
 - Ancien Ensimag (promotion 2014)
-- Thèse en méthodes statistique pour la génétique
+- Thèse en méthodes statistiques pour la génétique
 - Prestataire de service chez Kaizen Solution
 * Plan et objectifs 
 
@@ -199,15 +200,15 @@ Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
 
 * 2. Comment mener un projet /Machine Learning/ ?
 
-*Objectif*
+*Objectif* Prédire le prix des quartiers en Californie.
+#+HTML: <img src="./figures/cal_map.png" align="middle" width=600>
 
-Prédire le prix des maisons en Californie.
 #+BEGIN_NOTES
 Le diable est dans les détails donc je vais tacher de donner ces petit details
 d'organisation qui peuvent faire gagner du temps.
 #+END_NOTES
 
-** Créer un dossier de travaille et le versionner !
+** Créer un dossier de travaille et le versionner !! @@html:<img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" />@@
 - Créer le projet
 #+BEGIN_SRC sh
 mkdir california-house-price
@@ -216,7 +217,6 @@ mkdir -p references/ reports/figures
 touch README.md references/.gitkeep reports/figures/.gitkeep 
 git init .; git add *; git commit -m "Let s start"
 #+END_SRC
-
 - Organiser le projet
 #+BEGIN_EXAMPLE
 california-house-price
@@ -227,26 +227,113 @@ california-house-price
     └── figures       <- figures produites pour les rapports
 #+END_EXAMPLE
 ** Comprendre le problème
-** Choisir la métrique d'évaluation
-** Quelles données ?
-- Les données du client 
-- Des données publiques ? 
-- Des données simulées ? 
-** Choisir un langage programmation ?
-- R ou python ? /les deux/
+*Pourquoi le client a besoin de cette algorithme ?*
+#+BEGIN_QUOTE
+Le client veut savoir si il a intérêt à investir dans un quartier. Pour cela il
+lui faut le prix médian du quartier.
+#+END_QUOTE
+** Comprendre le problème
+*Comment cet algorithme sera utilisé ? Dans quel environnent ?*
+
+#+HTML: <img src="./figures/pipeline.png" align="middle">
+
+** Comprendre le problème
+*Existe t-il une solution actuellement ?*
+#+BEGIN_QUOTE
+La valeur est estimée par des experts ou des règles compliquées.
+#+END_QUOTE
+
 #+BEGIN_NOTES
-A cette étape de prototypage il faut pouvoir avance vite, cet deux langage on
-une grosse communauté et des environnements adapté au machine learning.
+Cela donne une méthode de base pour évaluer notre proposition de nouvelle
+méthode.
 #+END_NOTES
-- Choisir un paradigme de programmation ? 
+
+** Modélisation du problème
+*De quelle type d'algorithme d'apprentissage avons nous besoins ?*
+
+#+ATTR_REVEAL: :frag roll-in
+*/Machine Learning/ supervisé:* en particulier il s'agit d'un problème de
+régression multiple (/multivariate regression/ en anglais).
+
+** Choisir la métrique d'évaluation
+*Ça dépend du problème !*
+
+- Interprétable par le client ?
+  $$RMSE = \sqrt{\frac{1}{n} \sum_{i =1}^{n} (Y_i - \hat{Y_i})^2}$$
+- Plus dure a interpréter mais utile ? 
+  $$ R2 = 1 - \frac{\sum_{i =1}^{n} (Y_i - \hat{Y_i})^2}{\sum_{i =1}^{n} (Y_i - \bar{Y})^2} $$
+
+
+#+BEGIN_NOTES
+- La métrique dépend du problème !
+- mais comme c'est avec ca qu'on évaluation la performance il est très impotante de
+  bien la comprendre ! 
+#+END_NOTES
+** Quelles données ?
+- Les données du client ?
+- Des données publiques ?
+  - par exemple la météo ?
+- Des données simulées ?
+  - très utile pour tester les algorithmes
+  - peut permettre d'agrandir le jeux de données
+
+*Pourront nous avoir accès à ces données quand l'algorithme sera en production
+ ?*
+#+BEGIN_NOTES
+- I faut commencer par récupérer les données du client dans le cas de l'exemple
+  il s'agit des données des prix médian ainsi que d'autre statistique sur
+  différent quartier de Californie
+- il peut y avoir une différence de météo selon les quartiers 
+- Quand l'algorithme devra prédire le prix pour des nouveaux quartiers pourront
+  rassembler ces données ? A quel prix ? Il n'est pas forcement facile d'aller
+  récupérer les données météo.
+#+END_NOTES
+** Choisir un langage programmation ?
+*R ou python ?*
+/les deux/ 😋
+*Choisir un paradigme de programmation ?*
+- programmation fonctionnel
+- programmation orientée objet
+
+#+BEGIN_NOTES
+- si vous vous intéresser au machine learning, ces deux langages ressorte
+- Ce qui est sur c'est qu'a cette étape de prototypage il faut pouvoir avancer
+  vite, ces deux langage on une grosse communauté et des environnements adapté
+  au machine learning.
+- si je devais en choisir un ca serai le R: 
+  - communauté plus petite et centré autour des data science
+  - outils de traitement et vizualisation de données plus puissant
+  - language plutot fonctionnel
+- une question qu'on se pose jamais c'est le choix de paradigme de programmation
+  - pour simplifier ca veut dire coder en suivant quelque règle/habitude
+  - pour SIMPLIFIER on peut distinguer deux grands paradigmes, qui sont pas
+    forcément disjoint
+#+END_NOTES
+** Programmation fonctionnelle en quelque mots
+:LOGBOOK:
+- Note taken on [2019-01-02 mer. 17:09] \\
+  [[http://adv-r.had.co.nz/Functional-programming.html][Advanced R: Functional programming]]
+:END:
+
+*Quelques concepts*
+- fonction pure: pas d'effet de bord
+- fonction de fonction
+ 
+*Pourquoi* 
+- plus simple à paralléliser
+- plus simple à tester
 
 ** Créer un environnement isolé et reproductible 
-- python virtual envorinment 
-- conda
+*Pourquoi ?*
+- Pour reproduire les résultats
+- Facilite la mise en production 
+
+*Exemple d'outils*
+- Python =virtualenv=
+- =conda=
 #+BEGIN_SRC shell
-
+conda create -n california_env python=3.6 numpy pandas scikit-learn 
 #+END_SRC
-
 ** Rassembler données
 
 *Ou ranger les données ?*
@@ -258,11 +345,22 @@ une grosse communauté et des environnements adapté au machine learning.
 │   └── raw            <- The original, immutable data dump.
 #+END_EXAMPLE
 
-*Versioner*
+*Versionner*
 - git lfs
 - git annex
 - etc
-** Visualiser les données !!
+
+#+REVEAL: split
+
+*Pourquoi versionner les données ?*
+- Pour reproduire les résultats 
+  - garder des données intermédiaires pour gagner du temps
+- Versionner les modèles avec le code
+- Pour partager les données avec les membre de l'équipe
+#+BEGIN_NOTES
+- les modèles peuvent être long à calculer
+#+END_NOTES
+** Premier contacte avec les données !!
 - Tester les hypothèses sur les données
 - Comprendre les corrélations
 
@@ -288,7 +386,7 @@ Critique !
 C'est partie pour le code !
 
 #+BEGIN_EXAMPLE
-├── src                <- Source code for use in this project.
+├── src                <- Code source *paquagé*
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 #+END_EXAMPLE
 - Faire des packages: R et python sont très bien pour ca
@@ -300,15 +398,16 @@ C'est partie pour le code !
 
 ** Évaluation des modèles par la validation croisée
 ** Choix d'un modèle
+*Critères*
 - Performance
 - Facile à mettre en production: 
   - je peux l'intégrer sur la plate-forme de production ?
 - Facile à débuguer
-  - si le modèle données des mauvaises 
+  - si le modèle donne de mauvais résultats 
 - Interpretable
   - je peux comprendre pourquoi cette prediction ? 
 ** Déployer le modèle
-*Capacités clées*
+*Points clés*
 - Évaluer les données d'entrée
 - Fournir les prédictions avec les explications si il y en a
 - Signaler une divergence du modèle
