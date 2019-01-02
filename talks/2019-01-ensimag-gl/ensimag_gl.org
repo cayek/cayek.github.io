@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 # -*- mode: org -*-
 
-#+TITLE: Le génie logiciel pour un ingénieur en Machine Learning
+#+TITLE: Le génie logiciel pour un ingénieur en /Machine Learning/
 #+AUTHOR: Kévin CAYE
 #+LANGUAGE: fr
 
 # reveal options: see https://github.com/yjwen/org-reveal
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_ROOT: file:/home/cayek/.src/reveal.js
 #+REVEAL_TRANS: none
-#+OPTIONS: reveal_center:nil
+#+REVEAL_PLUGINS: (highlight notes)
+#+OPTIONS: reveal_center:nil num:nil toc:nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
 #+REVEAL_THEME: white
 #+REVEAL_HLEVEL: 0 ## all header on same lvl
 #+REVEAL_SPEED: fast
-# #+REVEAL_EXTRA_CSS: ./extra.css
+#+REVEAL_EXTRA_CSS: ./extra.css
 #+REVEAL_EXTRA_JS: 
 
 * TODO TODO                                                        :noexport:
@@ -73,91 +74,6 @@ clée:
   solutions et les outils utilisé.
 - Conclusions et take away messages.
 
-* Mon parcourt
-:LOGBOOK:
-- Note taken on [2018-11-13 Tue 16:56] \\
-  where to code come https://freefrontend.com/css-timelines/#horizontal-timelines
-- Note taken on [2018-11-13 Tue 16:56] \\
-  make an html iframe
-:END:
-#+BEGIN_EXPORT html
-<section class="timeline">
-  <ol>
-    <li>
-      <div>
-        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li></li>
-  </ol>
-#+END_EXPORT
-* La programmation orienté objet
-* La programmation orienté objet
-* La programmation fonctionnelle: Définition
-:LOGBOOK:
-- Note taken on [2018-10-26 Fri 15:58] \\
-  read that https://stackoverflow.com/questions/4852251/is-there-a-software-engineering-methodology-for-functional-programming
-:END:
-- définir
-- pourquoi c'est autant utilisé ?
-- Vous faite du R ?
-* La programmation fonctionnelle: 
-* Intégration continue
 * Qui je suis ?
 - Ancien Ensimag (promotion 2014)
 - Thèse en méthodes statistique pour la génétique
@@ -169,7 +85,9 @@ clée:
 Comprendre les outils et méthodes de développements utilisés en /Machine
 Learning/.
 
-1. Le paysage du /machine learning/
+*Plan*
+
+1. Le paysage du /Machine Learning/
 2. Comment mener un projet en /Machine Learning/
 
 #+BEGIN_NOTES
@@ -180,21 +98,105 @@ Learning/.
    - ca sera l'occasion de voir les outils et méthode de travaille
 #+END_NOTES
 * 1. Le paysage du /machine learning/
+:PROPERTIES:
+:reveal_background: ./figures/wordle.png
+:reveal_background_size: 1000px
+:END:
 ** Qu'est ce que le /Machine Learning/ ?
-** Pourquoi utiliser le /Machine Learning/ ? 
+*Approche traditionnel*
+#+HTML: <img src="./figures/traditional_workflow.png" align="middle">
+
+#+BEGIN_NOTES
+Exemple: faire un filtre anti spam 
+1. on annalyse les spam et on reparque que certain mots clées: gratuit, carte de crédit
+2. on écrit des filtre a la main pour chaque cas
+3. on test et on répète 
+#+END_NOTES
+** Qu'est ce que le /Machine Learning/ ?
+*Approche /Machine Learning/*
+#+HTML: <img src="./figures/ml_workflow.png" align="middle">
+
+#+BEGIN_NOTES
+Exemple: 
+- on si on fait du machine learning l'algorithme qui detecte les spams va
+  chercher a trouver automatiquement les règles qui font qu'in spam est un spam
+#+END_NOTES
+** Pourquoi utiliser le /Machine Learning/ ?
+*Le /machine Learning/ est parfait pour*
+
+- les problèmes résolus en énumérant un grand nombre de règles
+- les problèmes très complexes ou trouver toutes les règles serait impossible
+- les problèmes ou les règles peuvent changer, ou il faut s'adapter à de
+  nouvelles données
+
+*Exemples*
+
+- filtre anti spam
+- reconnaissance vocale
+- détection de fautes sur des machines industrielles
+
 ** Apprentissage supervisé
+*Un jeu de données labellisé*
+#+HTML: <img src="./figures/sup_ml0.png" align="middle">
+** Apprentissage supervisé
+*Régression*
+#+HTML: <img src="./figures/sup_ml1.png" align="middle">
+** Apprentissage supervisé
+*Exemples d'algorithme*
+- régression linéaire
+- arbres de décision
+- SVM (/Support Vector Machine/)
+- réseaux de neurones
+- et bien d'autres...
 ** Apprentissage non supervisé
+*Un jeu de données NON labellisé*
+#+HTML: <img src="./figures/unsup_ml0.png" align="middle">
+** Apprentissage non supervisé
+*/Clustering/*
+#+HTML: <img src="./figures/unsup_ml1.png" align="middle">
+** Apprentissage non supervisé
+Quelques exemples d'algorithme: 
+
+*/Clustering/*
+- k-Means
+*Visualisation et réduction de la dimension*
+- Analyse en composant principale
+*Règle d'association*
+- Apriori
+#+BEGIN_NOTES
+L'idée sous jacente est de trouver une structure aux données, un moyen de les
+représenter pour:
+- identifier des données annormals (outlier)
+- découvrir que les personnes qui achète de la sauce barbecue et des chips chète
+  aussi en général des steaks 🤓. 
+#+END_NOTES
+
 ** Apprentissage semi supervisé
-** Apprentissage par renforcement
-** Test et validation
+*Un jeu de données partiellement labellisé*
+#+HTML: <img src="./figures/semisup_ml0.png" align="middle">
+#+BEGIN_NOTES
+Exemple classique: 
+- quand on charge ses photos sur google photo il reconnaît seul les mêmes
+  personnes sur les différentes photos (clustering).
+- il suffit de labelliser une seul fois la personne sur une des photos pour que
+  tout le groupe soit labellisé.
+#+END_NOTES
+** Test et validation des algorithmes
 
-On veut estimer l'erreur de notre algorithme quand il sera en production.
+*Mesure de la performance*
+Par exemple l'erreur absolue moyenne:
 
-*Mesure de l'erreur*
+$$ MAE = \frac{1}{n} \sum_{i =1}^{n} |Y_i - \hat{Y_i}| $$
 
 *Données de validation*
 
-*No Free Lunch Theorem*
+Ce sont des données qui n'ont jamais été vu par les algorithmes, typiquement $20
+\%$ des données.
+
+*No Free Lunch Theorem ([[https://en.wikipedia.org/wiki/No_free_lunch_theorem][wikipedia]])*
+
+Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
+
 * 2. Comment mener un projet /Machine Learning/ ?
 
 *Objectif*
