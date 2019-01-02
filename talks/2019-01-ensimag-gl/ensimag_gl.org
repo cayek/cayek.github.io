@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # -*- mode: org -*-
 
-#+TITLE: Le génie logiciel pour un ingénieur en science des données
+#+TITLE: Le génie logiciel pour un ingénieur en Machine Learning
 #+AUTHOR: Kévin CAYE
 #+LANGUAGE: fr
 
@@ -13,8 +13,18 @@
 #+REVEAL_THEME: white
 #+REVEAL_HLEVEL: 0 ## all header on same lvl
 #+REVEAL_SPEED: fast
-#+REVEAL_EXTRA_CSS: ./extra.css
+# #+REVEAL_EXTRA_CSS: ./extra.css
 #+REVEAL_EXTRA_JS: 
+
+* TODO TODO                                                        :noexport:
+Faire un peut en mode time line
+- définir science des données
+- sorti de l'ensimag: git et c++
+- thèse: programmation fonctionnel
+- prestation: mise en production par des web service
+- present the service oriented Architechture: [[https://en.wikipedia.org/wiki/Service-oriented_architecture][wikipedia]] 
+ - Pourquoi on fait ca dans l'équipe AAI (présenter l'équipe AAI)
+Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 
 Objectif: montrer les différents cas de figure que j'ai rencontrer pour dans mon
 expérience. Je ne veux pas etre exhaustif mais peut être que mon expérience
@@ -62,15 +72,6 @@ clée:
 - Définir les problématiques de chaque étapes et apporter une proposition de
   solutions et les outils utilisé.
 - Conclusions et take away messages.
-* TODO TODO                                                        :noexport:
-Faire un peut en mode time line
-- définir science des données
-- sorti de l'ensimag: git et c++
-- thèse: programmation fonctionnel
-- prestation: mise en production par des web service
-- present the service oriented Architechture: [[https://en.wikipedia.org/wiki/Service-oriented_architecture][wikipedia
-]]  - Pourquoi on fait ca dans l'équipe AAI (présenter l'équipe AAI)
-Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 
 * Mon parcourt
 :LOGBOOK:
@@ -157,3 +158,165 @@ Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
 - Vous faite du R ?
 * La programmation fonctionnelle: 
 * Intégration continue
+* Qui je suis ?
+- Ancien Ensimag (promotion 2014)
+- Thèse en méthodes statistique pour la génétique
+- Prestataire de service chez Kaizen Solution
+* Plan et objectifs 
+
+*Objectifs*
+
+Comprendre les outils et méthodes de développements utilisés en /Machine
+Learning/.
+
+1. Le paysage du /machine learning/
+2. Comment mener un projet en /Machine Learning/
+
+#+BEGIN_NOTES
+1. Dans une première partie on va expliquer ce qu'est que le machine learning:
+  - ou il est utilisé
+  - quelle sont les différentes branches
+2. On verra comment un projet peut se développer du début a la fin
+   - ca sera l'occasion de voir les outils et méthode de travaille
+#+END_NOTES
+* 1. Le paysage du /machine learning/
+** Qu'est ce que le /Machine Learning/ ?
+** Pourquoi utiliser le /Machine Learning/ ? 
+** Apprentissage supervisé
+** Apprentissage non supervisé
+** Apprentissage semi supervisé
+** Apprentissage par renforcement
+** Test et validation
+
+On veut estimer l'erreur de notre algorithme quand il sera en production.
+
+*Mesure de l'erreur*
+
+*Données de validation*
+
+*No Free Lunch Theorem*
+* 2. Comment mener un projet /Machine Learning/ ?
+
+*Objectif*
+
+Prédire le prix des maisons en Californie.
+#+BEGIN_NOTES
+Le diable est dans les détails donc je vais tacher de donner ces petit details
+d'organisation qui peuvent faire gagner du temps.
+#+END_NOTES
+
+** Créer un dossier de travaille et le versionner !
+- Créer le projet
+#+BEGIN_SRC sh
+mkdir california-house-price
+cd california-house-price
+mkdir -p references/ reports/figures
+touch README.md references/.gitkeep reports/figures/.gitkeep 
+git init .; git add *; git commit -m "Let s start"
+#+END_SRC
+
+- Organiser le projet
+#+BEGIN_EXAMPLE
+california-house-price
+├── Makefile          <- avec des commandes comme `make data` ou `make train`
+├── README.md         <- Point de départ pour un nouvel arrivant sur le projet
+├── references        <- manuel, présentations, docs, etc
+└── reports           <- rapports produit sur le projet, html, latex, pdf, etc 
+    └── figures       <- figures produites pour les rapports
+#+END_EXAMPLE
+** Comprendre le problème
+** Choisir la métrique d'évaluation
+** Quelles données ?
+- Les données du client 
+- Des données publiques ? 
+- Des données simulées ? 
+** Choisir un langage programmation ?
+- R ou python ? /les deux/
+#+BEGIN_NOTES
+A cette étape de prototypage il faut pouvoir avance vite, cet deux langage on
+une grosse communauté et des environnements adapté au machine learning.
+#+END_NOTES
+- Choisir un paradigme de programmation ? 
+
+** Créer un environnement isolé et reproductible 
+- python virtual envorinment 
+- conda
+#+BEGIN_SRC shell
+
+#+END_SRC
+
+** Rassembler données
+
+*Ou ranger les données ?*
+#+BEGIN_EXAMPLE
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+#+END_EXAMPLE
+
+*Versioner*
+- git lfs
+- git annex
+- etc
+** Visualiser les données !!
+- Tester les hypothèses sur les données
+- Comprendre les corrélations
+
+*Dans des Notebooks*
+#+BEGIN_EXAMPLE
+├── notebooks                                 <- Jupyter, Rmardown
+│   └── 01-first-exploration.ipynb            <- notation `01` pour organiser les notebooks
+#+END_EXAMPLE
+
+#+BEGIN_NOTES
+- notebooks: il permettent d'aller vite sur l'exploration et de montrer rapidement des résultats.
+#+END_NOTES
+** Trop de notebooks, tue le notebook
+- see notebook war ! 
+- quand les utiliser et quand s'arrêter !
+** Créer une stratégie d'évaluation
+
+#+BEGIN_NOTES
+Critique ! 
+#+END_NOTES
+** Créer des modèles
+
+C'est partie pour le code !
+
+#+BEGIN_EXAMPLE
+├── src                <- Source code for use in this project.
+├── models             <- Trained and serialized models, model predictions, or model summaries
+#+END_EXAMPLE
+- Faire des packages: R et python sont très bien pour ca
+- documenter les fonctions: R: Roxygen, python: docstring
+
+*TDD: Test Driven Development*
+- python: =pytest=, R: =testthat=
+- c'est plus simple en programmation fonctionnel car pas d'effet de bord
+
+** Évaluation des modèles par la validation croisée
+** Choix d'un modèle
+- Performance
+- Facile à mettre en production: 
+  - je peux l'intégrer sur la plate-forme de production ?
+- Facile à débuguer
+  - si le modèle données des mauvaises 
+- Interpretable
+  - je peux comprendre pourquoi cette prediction ? 
+** Déployer le modèle
+*Capacités clées*
+- Évaluer les données d'entrée
+- Fournir les prédictions avec les explications si il y en a
+- Signaler une divergence du modèle
+- Ré-entrainer le modèle
+
+** Architecture orientée services
+*Concepts*
+
+*Exemple: Azure Machine Learning service*
+
+* Références
+- https://github.com/drivendata/cookiecutter-data-science
+- https://blog.algorithmia.com/becoming-a-10x-data-scientist/#prod
