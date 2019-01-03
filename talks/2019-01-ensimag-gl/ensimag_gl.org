@@ -263,7 +263,6 @@ régression multiple (/multivariate regression/ en anglais).
 - Plus dure a interpréter mais utile ? 
   $$ R2 = 1 - \frac{\sum_{i =1}^{n} (Y_i - \hat{Y_i})^2}{\sum_{i =1}^{n} (Y_i - \bar{Y})^2} $$
 
-
 #+BEGIN_NOTES
 - La métrique dépend du problème !
 - mais comme c'est avec ca qu'on évaluation la performance il est très impotante de
@@ -290,11 +289,13 @@ régression multiple (/multivariate regression/ en anglais).
 #+END_NOTES
 ** Choisir un langage programmation ?
 *R ou python ?*
+
 /les deux/ 😋
+
 *Choisir un paradigme de programmation ?*
 - programmation fonctionnel
 - programmation orientée objet
-
+  
 #+BEGIN_NOTES
 - si vous vous intéresser au machine learning, ces deux langages ressorte
 - Ce qui est sur c'est qu'a cette étape de prototypage il faut pouvoir avancer
@@ -309,7 +310,21 @@ régression multiple (/multivariate regression/ en anglais).
   - pour SIMPLIFIER on peut distinguer deux grands paradigmes, qui sont pas
     forcément disjoint
 #+END_NOTES
-** Programmation fonctionnelle en quelque mots
+** Programmation orienté objet: en quelques mots
+- [[https://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming][Object Oriented Programming vs. Functional Programming]]: définitions
+- [[https://www.educba.com/functional-programming-vs-oop/][Differences Between Functional Programming vs OOP]]: définitions
+** Programmation orienté objet: un exemple
+Un exemple avec une classe text ? composé de mot ? 
+** Programmation orienté object: design pattern
+- parler de element of reusable programing mettre la photo
+
+#+BEGIN_NOTES
+- le plus important quand on utilise un paradigme de programmation c'est de
+  connaître les design pattern
+  - permet de rentrer vite dans nouveau projet
+  - de mieux coder tout simplement
+#+END_NOTES
+** Programmation fonctionnelle: en quelque mots
 :LOGBOOK:
 - Note taken on [2019-01-02 mer. 17:09] \\
   [[http://adv-r.had.co.nz/Functional-programming.html][Advanced R: Functional programming]]
@@ -322,7 +337,13 @@ régression multiple (/multivariate regression/ en anglais).
 *Pourquoi* 
 - plus simple à paralléliser
 - plus simple à tester
-
+** Programmation fonctionnelle: un exemple
+** Programmation fonctionnelle: design pattern
+C'est moins clair pour la programmation fonctionnel
+Parler de Map reduce
+- [[https://www.oreilly.com/library/view/mapreduce-design-patterns/9781449341954/ch01.html][Design Patterns and MapReduce]]
+- [[https://en.wikipedia.org/wiki/MapReduce][wikipedia]]
+- [[https://fr.wikipedia.org/wiki/MapReduce][wikipedia fr]]: il y a une image
 ** Créer un environnement isolé et reproductible 
 *Pourquoi ?*
 - Pour reproduire les résultats
