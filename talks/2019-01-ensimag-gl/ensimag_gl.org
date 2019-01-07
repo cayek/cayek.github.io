@@ -18,6 +18,8 @@
 #+REVEAL_EXTRA_CSS: ./extra.css
 #+REVEAL_EXTRA_JS: 
 
+
+
 * TODO TODO                                                        :noexport:
 Faire un peut en mode time line
 - définir science des données
@@ -403,12 +405,16 @@ mettre la liste des colonnes
 
 ** 3. Découvrir et visualisé les données
 *** Choisir un langage programmation ?
-*R ou python ?*
+*R*
+- communauté centrée autour des /data science/
+- état de l'art des méthodes statistique
 
-/les deux/ 😋
+*python*
+- très grande communauté de développeurs, langage /élégant/
+- vision par ordinateur
 
 *Choisir un paradigme de programmation ?*
-- programmation fonctionnel
+- programmation fonctionnelle
 - programmation orientée objet
   
 #+BEGIN_NOTES
@@ -425,7 +431,91 @@ mettre la liste des colonnes
   - pour SIMPLIFIER on peut distinguer deux grands paradigmes, qui sont pas
     forcément disjoint
 #+END_NOTES
-*** Créer un environnement isolé et reproductible 
+*** TODO Programmation orienté objet
+
+*En quelques mots*
+- on décompose le problème en objets
+- concept d'objets: attribues, héritage, interaction entre objets
+- programmation impérative: modification de l'état internes des objets
+
+*Avantages*
+- permet de concevoir des logiciels complexes
+[[https://www.google.com/url?sa=i&source=imgres&cd=&ved=2ahUKEwjWk-7WidzfAhVLUxoKHdSpAqsQjRx6BAgBEAU&url=https%253A%252F%252Fwww.amazon.fr%252FDesign-Patterns-Elements-Reusable-Object-Oriented-ebook%252Fdp%252FB000SEIBB8&psig=AOvVaw2yjVHCZtSp-N9Cf8v2pQUN&ust=1546964419118577][Image]] 
+
+#+BEGIN_NOTES
+- un problème est décomposé en object avec des états internes et des interaction
+  en ces objects
+#+END_NOTES
+*** Programmation orienté objet: exemple en python
+On veux ajouter les éléments d'un tableau 
+
+#+BEGIN_SRC python :results output :exports both :eval no-export 
+class Array:
+    def __init__(self, data):
+        self.data = data
+
+    def add(self, t2):
+        for i in range(len(self.data)):
+            self.data[i] = t2.data[i] + self.data[i]
+
+a1 = Array([1,2,3])
+a2 = Array([3,8,6])
+a1.add(a2)
+print(a1.data)
+#+END_SRC
+
+#+RESULTS:
+: [4, 10, 9]
+
+#+BEGIN_NOTES
+- On commence par creer un objet et on lui définie une méthodes.
+#+END_NOTES
+
+*** Programmation fonctionnel 
+:LOGBOOK:
+- Note taken on [2019-01-07 lun. 17:50] \\
+  [[https://docs.python.org/3/howto/functional.html][python doc: Functional Programming HOWTO]]
+- Note taken on [2019-01-07 lun. 17:14] \\
+  [[https://fr.wikipedia.org/wiki/Programmation_fonctionnelle][wikipedia]]
+:END:
+
+*En quelques mots*
+- on décompose le problème en fonctions
+- concept de fonctions: fonctions pures, lamda-fonction, récursion
+- programmation déclarative: composants logiciels indépendants du contexte et ne
+  comportant aucun état interne.
+
+*Avantages*
+- plus simple a tester
+- concept de pipeline de données
+- parallélisation sur plusieurs machines/core
+
+#+BEGIN_NOTES
+- On décompose le problème en fonctions imbriquées, les fonctions on une etré et
+  une sortie et sont pures ! 
+#+END_NOTES
+*** Programmation fonctionnel: un exemple en python 
+On veux ajouter les éléments d'un tableau 
+
+#+BEGIN_SRC python :results output :exports both :eval no-export 
+def add(x, y):
+    return x + y
+
+a1 = [1,2,3]
+a2 = [3,8,6]
+
+print(map(add, a1, a2))
+#+END_SRC
+
+#+RESULTS:
+: [4, 10, 9]
+
+#+BEGIN_NOTES
+- on utilise les types de base python et on cherche découper la tache en
+  fonctions
+#+END_NOTES
+
+*** TODO Créer un environnement isolé et reproductible 
 *Pourquoi ?*
 - Pour reproduire les résultats
 - Facilite la mise en production 
@@ -433,49 +523,32 @@ mettre la liste des colonnes
 *Exemple d'outils*
 - Python =virtualenv=
 - =conda=
+
 #+BEGIN_SRC shell
 conda create -n california_env python=3.6 numpy pandas scikit-learn 
 #+END_SRC
 
-*** Les notebooks
-*** Trop de notebooks, tue le notebook
-- see notebook war ! 
-- quand les utiliser et quand s'arrêter !
-*** Programmation orienté objet : en quelques mots
-- [[https://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming][Object Oriented Programming vs. Functional Programming]]: définitions
-- [[https://www.educba.com/functional-programming-vs-oop/][Differences Between Functional Programming vs OOP]]: définitions
-*** Programmation orienté objet : un exemple
-Un exemple avec une classe text ? composé de mot ? 
-*** Programmation orienté object : design pattern
-- parler de element of reusable programing mettre la photo
+#+BEGIN_NOTES
+
+#+END_NOTES
+
+*** TODO Les notebooks
+[[http://arogozhnikov.github.io/images/jupyter/example-notebook.png][image]]
+
+*Exemple de notebook*
+- Jupyter notebook 
+- Rmarkdown
 
 #+BEGIN_NOTES
-- le plus important quand on utilise un paradigme de programmation c'est de
-  connaître les design pattern
-  - permet de rentrer vite dans nouveau projet
-  - de mieux coder tout simplement
+- un notebooks un environnement de dévellopement ou on peut coder et decrire ce
+  que l'on code (litterate programming)
+- les sorties du code sont capturé et peuvent être reprise plus tard
 #+END_NOTES
-*** Programmation fonctionnelle : en quelque mots
-:LOGBOOK:
-- Note taken on [2019-01-02 mer. 17:09] \\
-  [[http://adv-r.had.co.nz/Functional-programming.html][Advanced R: Functional programming]]
-:END:
 
-*Quelques concepts*
-- fonction pure: pas d'effet de bord
-- fonction de fonction
- 
-*Pourquoi* 
-- plus simple à paralléliser
-- plus simple à tester
-*** Programmation fonctionnelle : un exemple
-*** Programmation fonctionnelle : design pattern
-C'est moins clair pour la programmation fonctionnel
-Parler de Map reduce
-- [[https://www.oreilly.com/library/view/mapreduce-design-patterns/9781449341954/ch01.html][Design Patterns and MapReduce]]
-- [[https://en.wikipedia.org/wiki/MapReduce][wikipedia]]
-- [[https://fr.wikipedia.org/wiki/MapReduce][wikipedia fr]]: il y a une image
-*** Notre exemple : visualisation des données 
+*** TODO Trop de notebooks, tue le notebook
+- see notebook war ! https://yihui.name/en/2018/09/notebook-war/
+- quand les utiliser et quand s'arrêter !
+*** TODO Notre exemple : visualisation des données 
 plot page 55
 plot page 58
 ** 4. Créer les modèles
