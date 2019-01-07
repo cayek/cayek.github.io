@@ -198,9 +198,11 @@ Ce sont des données qui n'ont jamais été vu par les algorithmes, typiquement 
 
 Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
 
-* 2. Comment mener un projet /Machine Learning/ ?
+* TODO 2. Comment mener un projet /Machine Learning/ ?
 
-*Objectif* Prédire le prix des quartiers en Californie.
+*Objectif* Prédire le prix de l'immobilier en Californie.
+
+cette [[https://www.google.fr/search?client=ubuntu&hs=6OV&biw=1920&bih=877&tbm=isch&q=housing+california&spell=1&sa=X&ved=0ahUKEwivsc7XvtvfAhVLzRoKHVNrAkgQBQg6KAA#imgrc=Xd7jQBjUnUI6CM:][image]]
 
 #+BEGIN_NOTES
 Le diable est dans les détails donc je vais tacher de donner ces petit details
@@ -217,56 +219,36 @@ On va voir les points clées
 4. Créer les modèles
 5. Déployer le système
 
-** Créer un dossier de travaille et le versionner !! @@html:<img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" />@@
+** Créer un dossier pour le projet @@html:<img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" />@@ !!
 :LOGBOOK:
 - Note taken on [2019-01-04 ven. 11:33] \\
   https://blog.algorithmia.com/becoming-a-10x-data-scientist/#prod
 :END:
-- Créer le projet
+
 #+BEGIN_EXAMPLE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── Makefile           <- avec des commandes comme make data ou make train
+├── README.md          <- Point de départ pour un nouvel arrivant sur le projet
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── external       <- Données venant d'un tierce
+│   ├── interim        <- Données transformées intermédiaires
+│   ├── processed      <- Données finales, prètes pour les algos
+│   └── raw            <- Les données d'origine, immuables ! 
 │
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+├── docs               <- La documentation du projet (exemple: Sphinx ou MkDocs)
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Modèles entrainés
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Les notebooks (exemple: Jupyter, Rmarkdown)
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── references         <- Manuel, présentation, doc etc.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+├── reports            <- Rapports
+│   └── figures        <- figures des rapports
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── requirements.txt   <- Pour reproduire l'environnement de l'analyse, exemple
+│                         généré avec `pip freeze > requirements.txt`
 │
-├── src                <- Source code for use in this project.
-#+END_EXAMPLE
-
-#+BEGIN_SRC sh
-mkdir california-house-price
-cd california-house-price
-mkdir -p references/ reports/figures
-touch README.md references/.gitkeep reports/figures/.gitkeep 
-git init .; git add *; git commit -m "Let s start"
-#+END_SRC
-- Organiser le projet
-
-#+BEGIN_EXAMPLE
-california-house-price
-├── Makefile          <- avec des commandes comme `make data` ou `make train`
-├── README.md         <- Point de départ pour un nouvel arrivant sur le projet
-├── references        <- manuel, présentations, docs, etc
-└── reports           <- rapports produit sur le projet, html, latex, pdf, etc 
-    └── figures       <- figures produites pour les rapports
+├── src                <- Code source du projet (package python/R)
 #+END_EXAMPLE
 
 #+BEGIN_NOTES
@@ -352,7 +334,11 @@ régression multiple (/multivariate regression/ en anglais).
 Quelques question qu'on peut se poser sur les données
 #+END_NOTES
 
-*** La natures des données ?
+*** TODO La natures des données ?
+:LOGBOOK:
+- Note taken on [2019-01-07 lun. 11:50] \\
+  insert image
+:END:
 *Données tabulaires*
 
 *Les données séquentielles*
@@ -365,32 +351,31 @@ Quelques question qu'on peut se poser sur les données
 A quelle type de données on est habituellement confrontés
 #+END_NOTES
 
-*** Structure de données: /DataFrame/
+*** TODO Structure de données: /DataFrame/
 
-*Stucture de données*
 insert cette image [[https://www.google.com/search?q=dataframe+structure+representation&rlz=1C1GCEA_enFR773FR773&source=lnms&tbm=isch&sa=X&ved=0ahUKEwibo5Wj8tPfAhVD8hQKHW-xCWYQ_AUIDigB&biw=1536&bih=723#imgrc=khvRhkwTvwexiM:][here]]
 
-*Avantage*
+*Avantages*
 - opération classique sur les base données
 - représentation classique $observations \times features$
 - facile a paralléliser
 
 *Library*
 - R: =dplyr=
-- python: pandas
+- python: =pandas=
 
 #+BEGIN_NOTES
-Il existe de nombreux moyen de représenté les données mais pour travailler on
-utilise très souvent des data frame.
+- Il existe de nombreux moyen de représenté les données mais pour travailler on
+  utilise très souvent des data frame.
+- C'est la structure de données utilisé pendant la phase d'exploration des données
 #+END_NOTES
 
 *** Structure de données: /Tensor/
 
-*Structure de données*
 [[https://www.google.com/search?q=tensor+data+structure&rlz=1C1GCEA_enFR773FR773&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjo78_B8tPfAhWbBWMBHZwcB2IQ_AUIDigB&biw=1536&bih=723#imgrc=qe54JoUROxNuyM][get image here]]
 
-*Avantage*
-- algorithme fonctionne bien avec ces structure de données
+*Avantages*
+- algorithmes fonctionnent bien avec ces structure de données
 - parfait pour représenter des images ou des séries temporels
 - algèbre linéaire
 
@@ -398,46 +383,24 @@ utilise très souvent des data frame.
 - =TensorFlow=
 - =Numpy=
 
+#+BEGIN_NOTES
+- c'est la structure de données des algorithmes de machine learning
+#+END_NOTES
+
 *** Notre exemple : /California Housing Prices dataset/
 
 #+HTML: <img src="./figures/cal_map.png" align="middle" width=600>
 
 - Données statique
-- /Small data/: ca tient sur un ordinateur
+- /Small data/: ça tient sur un ordinateur
 
-*** Notre exemple : /California Housing Prices dataset/
+*** TODO Notre exemple : /California Housing Prices dataset/
 
 - Données accessible en production
 #+BEGIN_EXAMPLE
 mettre la liste des colonnes
 #+END_EXAMPLE
 
-*** Rassembler données
-
-*Ou ranger les données ?*
-#+BEGIN_EXAMPLE
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-#+END_EXAMPLE
-
-*Versionner*
-- git lfs
-- git annex
-- etc
-
-#+REVEAL: split
-
-*Pourquoi versionner les données ?*
-- Pour reproduire les résultats 
-  - garder des données intermédiaires pour gagner du temps
-- Versionner les modèles avec le code
-- Pour partager les données avec les membre de l'équipe
-#+BEGIN_NOTES
-- les modèles peuvent être long à calculer
-#+END_NOTES
 ** 3. Découvrir et visualisé les données
 *** Choisir un langage programmation ?
 *R ou python ?*
