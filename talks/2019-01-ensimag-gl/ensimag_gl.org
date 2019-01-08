@@ -6,7 +6,7 @@
 #+LANGUAGE: fr
 
 # reveal options: see https://github.com/yjwen/org-reveal
-#+REVEAL_ROOT: file:../../js/reveal.js/
+#+REVEAL_ROOT: ../../js/reveal.js/
 #+REVEAL_TRANS: none
 #+REVEAL_PLUGINS: (highlight notes)
 #+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t

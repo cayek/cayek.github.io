@@ -7,19 +7,19 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:../../js/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="../../js/reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="file:../../js/reveal.js/css/theme/white.css" id="theme"/>
+<link rel="stylesheet" href="../../js/reveal.js/css/theme/white.css" id="theme"/>
 
 <link rel="stylesheet" href="./extra.css"/>
-<link rel="stylesheet" href="file:../../js/reveal.js/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="../../js/reveal.js/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'file:../../js/reveal.js/css/print/pdf.css';
+        link.href = '../../js/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -28,14 +28,14 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Le génie logiciel pour un ingénieur en <i>Machine Learning</i></h1><h2 class="author">Kévin CAYE</h2><p class="date">Created: 2019-01-08 mar. 22:11</p>
+<section id="sec-title-slide"><h1 class="title">Le génie logiciel pour un ingénieur en <i>Machine Learning</i></h1><h2 class="author">Kévin CAYE</h2><p class="date">Created: 2019-01-08 mar. 22:14</p>
 </section>
 
 
 
 <section>
-<section id="slide-orgb0f2346">
-<h2 id="orgb0f2346">Qui je suis ?</h2>
+<section id="slide-org20bef46">
+<h2 id="org20bef46">Qui je suis ?</h2>
 <ul>
 <li>Ancien Ensimag (promotion 2014)</li>
 <li>Thèse en méthodes statistiques pour la génétique</li>
@@ -45,8 +45,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgd00fd3c">
-<h2 id="orgd00fd3c">Plan et objectifs</h2>
+<section id="slide-org3d5c4fe">
+<h2 id="org3d5c4fe">Plan et objectifs</h2>
 <p>
 <b>Objectifs</b>
 </p>
@@ -86,11 +86,11 @@ Learning</i>.
 </section>
 </section>
 <section>
-<section id="slide-org554d4db" data-background="./figures/wordle.png" data-background-size="1000px">
-<h2 id="org554d4db">1. Le paysage du <i>machine learning</i></h2>
+<section id="slide-org599302e" data-background="./figures/wordle.png" data-background-size="1000px">
+<h2 id="org599302e">1. Le paysage du <i>machine learning</i></h2>
 </section>
-<section id="slide-org7408e2a">
-<h3 id="org7408e2a">Qu'est ce que le <i>Machine Learning</i> ?</h3>
+<section id="slide-orgefb1402">
+<h3 id="orgefb1402">Qu'est ce que le <i>Machine Learning</i> ?</h3>
 <p>
 <b>Approche traditionnel</b>
 </p>
@@ -109,8 +109,8 @@ Exemple: faire un filtre anti spam
 
 </aside>
 </section>
-<section id="slide-orgc4de61a">
-<h3 id="orgc4de61a">Qu'est ce que le <i>Machine Learning</i> ?</h3>
+<section id="slide-org166c330">
+<h3 id="org166c330">Qu'est ce que le <i>Machine Learning</i> ?</h3>
 <p>
 <b>Approche <i>Machine Learning</i></b>
 </p>
@@ -128,8 +128,8 @@ chercher a trouver automatiquement les règles qui font qu'in spam est un spam</
 
 </aside>
 </section>
-<section id="slide-org227e3bf">
-<h3 id="org227e3bf">Pourquoi utiliser le <i>Machine Learning</i> ?</h3>
+<section id="slide-org3b12530">
+<h3 id="org3b12530">Pourquoi utiliser le <i>Machine Learning</i> ?</h3>
 <p>
 <b>Le <i>machine Learning</i> est parfait pour</b>
 </p>
@@ -154,22 +154,22 @@ nouvelles données</li>
 </ul>
 
 </section>
-<section id="slide-org269a4a2">
-<h3 id="org269a4a2">Apprentissage supervisé</h3>
+<section id="slide-org6c97104">
+<h3 id="org6c97104">Apprentissage supervisé</h3>
 <p>
 <b>Un jeu de données labellisé</b>
 </p>
 <img src="./figures/sup_ml0.png" align="middle">
 </section>
-<section id="slide-org66ee308">
-<h3 id="org66ee308">Apprentissage supervisé</h3>
+<section id="slide-orgf23cc49">
+<h3 id="orgf23cc49">Apprentissage supervisé</h3>
 <p>
 <b>Régression</b>
 </p>
 <img src="./figures/sup_ml1.png" align="middle">
 </section>
-<section id="slide-org3e7ab1b">
-<h3 id="org3e7ab1b">Apprentissage supervisé</h3>
+<section id="slide-org0e97627">
+<h3 id="org0e97627">Apprentissage supervisé</h3>
 <p>
 <b>Exemples d'algorithme</b>
 </p>
@@ -182,22 +182,22 @@ nouvelles données</li>
 
 </ul>
 </section>
-<section id="slide-org177744f">
-<h3 id="org177744f">Apprentissage non supervisé</h3>
+<section id="slide-org5b9a17b">
+<h3 id="org5b9a17b">Apprentissage non supervisé</h3>
 <p>
 <b>Un jeu de données NON labellisé</b>
 </p>
 <img src="./figures/unsup_ml0.png" align="middle">
 </section>
-<section id="slide-org6c77a2b">
-<h3 id="org6c77a2b">Apprentissage non supervisé</h3>
+<section id="slide-orga67791f">
+<h3 id="orga67791f">Apprentissage non supervisé</h3>
 <p>
 <b><i>Clustering</i></b>
 </p>
 <img src="./figures/unsup_ml1.png" align="middle">
 </section>
-<section id="slide-org7af1764">
-<h3 id="org7af1764">Apprentissage non supervisé</h3>
+<section id="slide-orgc06ca8b">
+<h3 id="orgc06ca8b">Apprentissage non supervisé</h3>
 <p>
 Quelques exemples d'algorithme: 
 </p>
@@ -238,8 +238,8 @@ aussi en général des steaks 🤓.</li>
 </aside>
 
 </section>
-<section id="slide-org6771bc5">
-<h3 id="org6771bc5">Apprentissage semi supervisé</h3>
+<section id="slide-orgf2bdb51">
+<h3 id="orgf2bdb51">Apprentissage semi supervisé</h3>
 <p>
 <b>Un jeu de données partiellement labellisé</b>
 </p>
@@ -258,8 +258,8 @@ tout le groupe soit labellisé.</li>
 
 </aside>
 </section>
-<section id="slide-orge2e5a20">
-<h3 id="orge2e5a20">Test et validation des algorithmes</h3>
+<section id="slide-org1f06329">
+<h3 id="org1f06329">Test et validation des algorithmes</h3>
 <p>
 <b>Mesure de la performance</b>
 Par exemple l'erreur absolue moyenne:
@@ -289,8 +289,8 @@ Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
 </section>
 </section>
 <section>
-<section id="slide-orga545e86">
-<h2 id="orga545e86"><span class="todo TODO">TODO</span> 2. Comment mener un projet <i>Machine Learning</i> ?</h2>
+<section id="slide-org27340b9">
+<h2 id="org27340b9"><span class="todo TODO">TODO</span> 2. Comment mener un projet <i>Machine Learning</i> ?</h2>
 <p>
 <b>Objectif</b> Prédire le prix de l'immobilier en Californie.
 </p>
@@ -311,8 +311,8 @@ On va voir les points clées
 
 </aside>
 </section>
-<section id="slide-org445d732">
-<h3 id="org445d732">Projet <i>Machine Learning</i>: principales étapes</h3>
+<section id="slide-orgf196235">
+<h3 id="orgf196235">Projet <i>Machine Learning</i>: principales étapes</h3>
 <ol>
 <li>Comprendre le problème</li>
 <li>Rassembler les données</li>
@@ -323,8 +323,8 @@ On va voir les points clées
 </ol>
 
 </section>
-<section id="slide-orgb531c39">
-<h3 id="orgb531c39">Créer un dossier pour le projet <img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" /> !!</h3>
+<section id="slide-org7ef88c2">
+<h3 id="org7ef88c2">Créer un dossier pour le projet <img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" /> !!</h3>
 <pre class="example">
 ├── Makefile           &lt;- avec des commandes comme make data ou make train
 ├── README.md          &lt;- Point de départ pour un nouvel arrivant sur le projet
@@ -359,13 +359,13 @@ Mais avant de commencer il faut créer un espace de travaille !
 </aside>
 
 </section>
-<section id="slide-org5178e0f">
-<h3 id="org5178e0f">1. Comprendre le problème</h3>
-<div class="outline-text-3" id="text-org5178e0f">
+<section id="slide-org484637b">
+<h3 id="org484637b">1. Comprendre le problème</h3>
+<div class="outline-text-3" id="text-org484637b">
 </div>
 </section>
-<section id="slide-orgdbe0d3a">
-<h4 id="orgdbe0d3a">Comprendre le problème</h4>
+<section id="slide-org2c958c1">
+<h4 id="org2c958c1">Comprendre le problème</h4>
 <p>
 <b>Pourquoi le client a besoin de cette algorithme ?</b>
 </p>
@@ -376,8 +376,8 @@ lui faut le prix médian du quartier.
 </p>
 </blockquote>
 </section>
-<section id="slide-orgead0ccc">
-<h4 id="orgead0ccc">Comprendre le problème</h4>
+<section id="slide-org7266294">
+<h4 id="org7266294">Comprendre le problème</h4>
 <p>
 <b>Comment cet algorithme sera utilisé ? Dans quel environnent ?</b>
 </p>
@@ -385,8 +385,8 @@ lui faut le prix médian du quartier.
 <img src="./figures/pipeline.png" align="middle">
 
 </section>
-<section id="slide-orge272bf0">
-<h4 id="orge272bf0">Comprendre le problème</h4>
+<section id="slide-org4a85926">
+<h4 id="org4a85926">Comprendre le problème</h4>
 <p>
 <b>Existe t-il une solution actuellement ?</b>
 </p>
@@ -405,8 +405,8 @@ méthode.
 </aside>
 
 </section>
-<section id="slide-org3ad8992">
-<h4 id="org3ad8992">Modélisation du problème</h4>
+<section id="slide-org3613012">
+<h4 id="org3613012">Modélisation du problème</h4>
 <p>
 <b>De quelle type d'algorithme d'apprentissage avons nous besoins ?</b>
 </p>
@@ -417,8 +417,8 @@ régression multiple (<i>multivariate regression</i> en anglais).
 </p>
 
 </section>
-<section id="slide-org65de42e">
-<h4 id="org65de42e">Choisir la métrique d'évaluation</h4>
+<section id="slide-org12cd69d">
+<h4 id="org12cd69d">Choisir la métrique d'évaluation</h4>
 <p>
 <b>Ça dépend du problème !</b>
 </p>
@@ -441,13 +441,13 @@ bien la comprendre !</li>
 
 </aside>
 </section>
-<section id="slide-org52d089d">
-<h3 id="org52d089d">2. Rassembler les données</h3>
-<div class="outline-text-3" id="text-org52d089d">
+<section id="slide-org36697d1">
+<h3 id="org36697d1">2. Rassembler les données</h3>
+<div class="outline-text-3" id="text-org36697d1">
 </div>
 </section>
-<section id="slide-org3b63baf">
-<h4 id="org3b63baf">Quelles données ?</h4>
+<section id="slide-org7a3049f">
+<h4 id="org7a3049f">Quelles données ?</h4>
 <p>
 <b>Les données du client ?</b>
 </p>
@@ -483,8 +483,8 @@ récupérer les données météo.</li>
 
 </aside>
 </section>
-<section id="slide-org9189b19">
-<h4 id="org9189b19">Quelles données ?</h4>
+<section id="slide-org90cdb4e">
+<h4 id="org90cdb4e">Quelles données ?</h4>
 <p>
 <b>données dynamique ?</b>
 </p>
@@ -518,8 +518,8 @@ Quelques question qu'on peut se poser sur les données
 </aside>
 
 </section>
-<section id="slide-org474b04d">
-<h4 id="org474b04d"><span class="todo TODO">TODO</span> La natures des données ?</h4>
+<section id="slide-org451b34a">
+<h4 id="org451b34a"><span class="todo TODO">TODO</span> La natures des données ?</h4>
 <p>
 <b>Données tabulaires</b>
 </p>
@@ -544,8 +544,8 @@ A quelle type de données on est habituellement confrontés
 </aside>
 
 </section>
-<section id="slide-org16070d4">
-<h4 id="org16070d4"><span class="todo TODO">TODO</span> Structure de données: <i>DataFrame</i></h4>
+<section id="slide-org4909b84">
+<h4 id="org4909b84"><span class="todo TODO">TODO</span> Structure de données: <i>DataFrame</i></h4>
 <p>
 insert cette image <a href="https://www.google.com/search?q=dataframe+structure+representation&amp;rlz=1C1GCEA_enFR773FR773&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwibo5Wj8tPfAhVD8hQKHW-xCWYQ_AUIDigB&amp;biw=1536&amp;bih=723#imgrc=khvRhkwTvwexiM:">here</a>
 </p>
@@ -580,8 +580,8 @@ utilise très souvent des data frame.</li>
 </aside>
 
 </section>
-<section id="slide-orgca8974a">
-<h4 id="orgca8974a">Structure de données: <i>Tensor</i></h4>
+<section id="slide-org46d614b">
+<h4 id="org46d614b">Structure de données: <i>Tensor</i></h4>
 <p>
 <a href="https://www.google.com/search?q=tensor+data+structure&amp;rlz=1C1GCEA_enFR773FR773&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjo78_B8tPfAhWbBWMBHZwcB2IQ_AUIDigB&amp;biw=1536&amp;bih=723#imgrc=qe54JoUROxNuyM">get image here</a>
 </p>
@@ -614,8 +614,8 @@ utilise très souvent des data frame.</li>
 </aside>
 
 </section>
-<section id="slide-org81dfb8e">
-<h4 id="org81dfb8e">Notre exemple : <i>California Housing Prices dataset</i></h4>
+<section id="slide-org837906e">
+<h4 id="org837906e">Notre exemple : <i>California Housing Prices dataset</i></h4>
 <img src="./figures/cal_map.png" align="middle" width=600>
 
 <ul>
@@ -625,8 +625,8 @@ utilise très souvent des data frame.</li>
 </ul>
 
 </section>
-<section id="slide-org1bec56e">
-<h4 id="org1bec56e"><span class="todo TODO">TODO</span> Notre exemple : <i>California Housing Prices dataset</i></h4>
+<section id="slide-orge6cd421">
+<h4 id="orge6cd421"><span class="todo TODO">TODO</span> Notre exemple : <i>California Housing Prices dataset</i></h4>
 <ul>
 <li>Données accessible en production</li>
 
@@ -636,13 +636,13 @@ mettre la liste des colonnes
 </pre>
 
 </section>
-<section id="slide-org18c29bf">
-<h3 id="org18c29bf">3. Découvrir et visualisé les données</h3>
-<div class="outline-text-3" id="text-org18c29bf">
+<section id="slide-org2fa9972">
+<h3 id="org2fa9972">3. Découvrir et visualisé les données</h3>
+<div class="outline-text-3" id="text-org2fa9972">
 </div>
 </section>
-<section id="slide-org8e26f81">
-<h4 id="org8e26f81">Choisir un langage programmation ?</h4>
+<section id="slide-org3331a39">
+<h4 id="org3331a39">Choisir un langage programmation ?</h4>
 <p>
 <b>R</b>
 </p>
@@ -695,8 +695,8 @@ forcément disjoint</li>
 
 </aside>
 </section>
-<section id="slide-org15a0604">
-<h4 id="org15a0604"><span class="todo TODO">TODO</span> Programmation orienté objet</h4>
+<section id="slide-orgfd5e118">
+<h4 id="orgfd5e118"><span class="todo TODO">TODO</span> Programmation orienté objet</h4>
 <p>
 <b>En quelques mots</b>
 </p>
@@ -727,8 +727,8 @@ en ces objects</li>
 
 </aside>
 </section>
-<section id="slide-orgec4bd10">
-<h4 id="orgec4bd10">Programmation orienté objet: exemple en python</h4>
+<section id="slide-org84d6ea1">
+<h4 id="org84d6ea1">Programmation orienté objet: exemple en python</h4>
 <p>
 On veux ajouter les éléments d'un tableau 
 </p>
@@ -764,8 +764,8 @@ print(a1.data)
 </aside>
 
 </section>
-<section id="slide-orge1b45d9">
-<h4 id="orge1b45d9">Programmation fonctionnel</h4>
+<section id="slide-orgd3094ba">
+<h4 id="orgd3094ba">Programmation fonctionnel</h4>
 <p>
 <b>En quelques mots</b>
 </p>
@@ -796,8 +796,8 @@ une sortie et sont pures !</li>
 
 </aside>
 </section>
-<section id="slide-org848d364">
-<h4 id="org848d364">Programmation fonctionnel: un exemple en python</h4>
+<section id="slide-orgfebe7f1">
+<h4 id="orgfebe7f1">Programmation fonctionnel: un exemple en python</h4>
 <p>
 On veux ajouter les éléments d'un tableau 
 </p>
@@ -829,8 +829,8 @@ fonctions</li>
 </aside>
 
 </section>
-<section id="slide-org82afcbc">
-<h4 id="org82afcbc"><span class="todo TODO">TODO</span> Créer un environnement isolé et reproductible</h4>
+<section id="slide-org06c03d7">
+<h4 id="org06c03d7"><span class="todo TODO">TODO</span> Créer un environnement isolé et reproductible</h4>
 <p>
 <b>Pourquoi ?</b>
 </p>
@@ -863,8 +863,8 @@ fonctions</li>
 </aside>
 
 </section>
-<section id="slide-org3892a09">
-<h4 id="org3892a09"><span class="todo TODO">TODO</span> Les notebooks</h4>
+<section id="slide-orgd2d05d0">
+<h4 id="orgd2d05d0"><span class="todo TODO">TODO</span> Les notebooks</h4>
 <p>
 <a href="http://arogozhnikov.github.io/images/jupyter/example-notebook.png">image</a>
 </p>
@@ -889,28 +889,28 @@ que l'on code (litterate programming)</li>
 </aside>
 
 </section>
-<section id="slide-org605ce7f">
-<h4 id="org605ce7f"><span class="todo TODO">TODO</span> Trop de notebooks, tue le notebook</h4>
+<section id="slide-org26014d4">
+<h4 id="org26014d4"><span class="todo TODO">TODO</span> Trop de notebooks, tue le notebook</h4>
 <ul>
 <li>see notebook war ! <a href="https://yihui.name/en/2018/09/notebook-war/">https://yihui.name/en/2018/09/notebook-war/</a></li>
 <li>quand les utiliser et quand s'arrêter !</li>
 
 </ul>
 </section>
-<section id="slide-orgedb74c0">
-<h4 id="orgedb74c0"><span class="todo TODO">TODO</span> Notre exemple : visualisation des données</h4>
+<section id="slide-org915f5f5">
+<h4 id="org915f5f5"><span class="todo TODO">TODO</span> Notre exemple : visualisation des données</h4>
 <p>
 plot page 55
 plot page 58
 </p>
 </section>
-<section id="slide-org19846ac">
-<h3 id="org19846ac">4. Créer les modèles</h3>
-<div class="outline-text-3" id="text-org19846ac">
+<section id="slide-orgef43934">
+<h3 id="orgef43934">4. Créer les modèles</h3>
+<div class="outline-text-3" id="text-orgef43934">
 </div>
 </section>
-<section id="slide-orgbda5a5f">
-<h4 id="orgbda5a5f">Créer une stratégie d'évaluation</h4>
+<section id="slide-org24a2b26">
+<h4 id="org24a2b26">Créer une stratégie d'évaluation</h4>
 <aside class="notes">
 <p>
 Critique ! 
@@ -918,8 +918,8 @@ Critique !
 
 </aside>
 </section>
-<section id="slide-orgfdde4fe">
-<h4 id="orgfdde4fe">Créer des modèles</h4>
+<section id="slide-org4f04483">
+<h4 id="org4f04483">Créer des modèles</h4>
 <p>
 C'est partie pour le code !
 </p>
@@ -944,11 +944,11 @@ C'est partie pour le code !
 </ul>
 
 </section>
-<section id="slide-org06b7372">
-<h4 id="org06b7372">Évaluation des modèles par la validation croisée</h4>
+<section id="slide-org252f3eb">
+<h4 id="org252f3eb">Évaluation des modèles par la validation croisée</h4>
 </section>
-<section id="slide-orgb4ec339">
-<h4 id="orgb4ec339">Choix d'un modèle</h4>
+<section id="slide-orgb070366">
+<h4 id="orgb070366">Choix d'un modèle</h4>
 <p>
 <b>Critères</b>
 </p>
@@ -972,16 +972,16 @@ C'est partie pour le code !
 
 </ul>
 </section>
-<section id="slide-org008f5be">
-<h4 id="org008f5be">Notre exemple :</h4>
+<section id="slide-org1f1d470">
+<h4 id="org1f1d470">Notre exemple :</h4>
 </section>
-<section id="slide-org0245d58">
-<h3 id="org0245d58">5. Déployer le système</h3>
-<div class="outline-text-3" id="text-org0245d58">
+<section id="slide-org5f7352f">
+<h3 id="org5f7352f">5. Déployer le système</h3>
+<div class="outline-text-3" id="text-org5f7352f">
 </div>
 </section>
-<section id="slide-org6da3088">
-<h4 id="org6da3088">Déployer le modèle</h4>
+<section id="slide-orgb94e38a">
+<h4 id="orgb94e38a">Déployer le modèle</h4>
 <p>
 Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du client !
 </p>
@@ -1005,15 +1005,15 @@ Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du clien
 
 </aside>
 </section>
-<section id="slide-orgaed5ca6">
-<h4 id="orgaed5ca6">Architecture orientée services</h4>
+<section id="slide-org3770982">
+<h4 id="org3770982">Architecture orientée services</h4>
 <p>
 <b>Concepts</b>
 </p>
 
 </section>
-<section id="slide-orgee1fadb">
-<h4 id="orgee1fadb">Exemple d'architecture</h4>
+<section id="slide-org77cccf8">
+<h4 id="org77cccf8">Exemple d'architecture</h4>
 <p>
 <b>Exemple: Azure Machine Learning service</b>
 </p>
@@ -1021,8 +1021,8 @@ Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du clien
 </section>
 </section>
 <section>
-<section id="slide-org4aa5725">
-<h2 id="org4aa5725">Références</h2>
+<section id="slide-org98635b6">
+<h2 id="org98635b6">Références</h2>
 <ul>
 <li><a href="https://github.com/drivendata/cookiecutter-data-science">https://github.com/drivendata/cookiecutter-data-science</a></li>
 
@@ -1031,8 +1031,8 @@ Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du clien
 </section>
 </div>
 </div>
-<script src="file:../../js/reveal.js/lib/js/head.min.js"></script>
-<script src="file:../../js/reveal.js/js/reveal.js"></script>
+<script src="../../js/reveal.js/lib/js/head.min.js"></script>
+<script src="../../js/reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -1061,8 +1061,8 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'file:../../js/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:../../js/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: '../../js/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../js/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
