@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Le génie logiciel pour un ingénieur en <i>Machine Learning</i></title>
+<meta name="author" content="(Kévin CAYE)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:../../js/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:../../js/reveal.js/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="./extra.css"/>
+<link rel="stylesheet" href="file:../../js/reveal.js/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:../../js/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Le génie logiciel pour un ingénieur en <i>Machine Learning</i></h1><h2 class="author">Kévin CAYE</h2><p class="date">Created: 2019-01-08 mar. 22:11</p>
+</section>
+
+
+
+<section>
+<section id="slide-orgb0f2346">
+<h2 id="orgb0f2346">Qui je suis ?</h2>
+<ul>
+<li>Ancien Ensimag (promotion 2014)</li>
+<li>Thèse en méthodes statistiques pour la génétique</li>
+<li>Prestataire de service chez Kaizen Solution</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd00fd3c">
+<h2 id="orgd00fd3c">Plan et objectifs</h2>
+<p>
+<b>Objectifs</b>
+</p>
+
+<p>
+Comprendre les outils et méthodes de développements utilisés en <i>Machine
+Learning</i>.
+</p>
+
+<p>
+<b>Plan</b>
+</p>
+
+<ol>
+<li>Le paysage du <i>Machine Learning</i></li>
+<li>Comment mener un projet en <i>Machine Learning</i></li>
+
+</ol>
+
+<aside class="notes">
+<ol>
+<li>Dans une première partie on va expliquer ce qu'est que le machine learning:
+<ul>
+<li>ou il est utilisé</li>
+<li>quelle sont les différentes branches</li>
+
+</ul></li>
+<li>On verra comment un projet peut se développer du début a la fin
+<ul>
+<li>ca sera l'occasion de voir les outils et méthode de travaille</li>
+
+</ul></li>
+
+</ol>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org554d4db" data-background="./figures/wordle.png" data-background-size="1000px">
+<h2 id="org554d4db">1. Le paysage du <i>machine learning</i></h2>
+</section>
+<section id="slide-org7408e2a">
+<h3 id="org7408e2a">Qu'est ce que le <i>Machine Learning</i> ?</h3>
+<p>
+<b>Approche traditionnel</b>
+</p>
+<img src="./figures/traditional_workflow.png" align="middle">
+
+<aside class="notes">
+<p>
+Exemple: faire un filtre anti spam 
+</p>
+<ol>
+<li>on annalyse les spam et on reparque que certain mots clées: gratuit, carte de crédit</li>
+<li>on écrit des filtre a la main pour chaque cas</li>
+<li>on test et on répète</li>
+
+</ol>
+
+</aside>
+</section>
+<section id="slide-orgc4de61a">
+<h3 id="orgc4de61a">Qu'est ce que le <i>Machine Learning</i> ?</h3>
+<p>
+<b>Approche <i>Machine Learning</i></b>
+</p>
+<img src="./figures/ml_workflow.png" align="middle">
+
+<aside class="notes">
+<p>
+Exemple: 
+</p>
+<ul>
+<li>on si on fait du machine learning l'algorithme qui detecte les spams va
+chercher a trouver automatiquement les règles qui font qu'in spam est un spam</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org227e3bf">
+<h3 id="org227e3bf">Pourquoi utiliser le <i>Machine Learning</i> ?</h3>
+<p>
+<b>Le <i>machine Learning</i> est parfait pour</b>
+</p>
+
+<ul>
+<li>les problèmes résolus en énumérant un grand nombre de règles</li>
+<li>les problèmes très complexes ou trouver toutes les règles serait impossible</li>
+<li>les problèmes ou les règles peuvent changer, ou il faut s'adapter à de
+nouvelles données</li>
+
+</ul>
+
+<p>
+<b>Exemples</b>
+</p>
+
+<ul>
+<li>filtre anti spam</li>
+<li>reconnaissance vocale</li>
+<li>détection de fautes sur des machines industrielles</li>
+
+</ul>
+
+</section>
+<section id="slide-org269a4a2">
+<h3 id="org269a4a2">Apprentissage supervisé</h3>
+<p>
+<b>Un jeu de données labellisé</b>
+</p>
+<img src="./figures/sup_ml0.png" align="middle">
+</section>
+<section id="slide-org66ee308">
+<h3 id="org66ee308">Apprentissage supervisé</h3>
+<p>
+<b>Régression</b>
+</p>
+<img src="./figures/sup_ml1.png" align="middle">
+</section>
+<section id="slide-org3e7ab1b">
+<h3 id="org3e7ab1b">Apprentissage supervisé</h3>
+<p>
+<b>Exemples d'algorithme</b>
+</p>
+<ul>
+<li>régression linéaire</li>
+<li>arbres de décision</li>
+<li>SVM (<i>Support Vector Machine</i>)</li>
+<li>réseaux de neurones</li>
+<li>et bien d'autres&#x2026;</li>
+
+</ul>
+</section>
+<section id="slide-org177744f">
+<h3 id="org177744f">Apprentissage non supervisé</h3>
+<p>
+<b>Un jeu de données NON labellisé</b>
+</p>
+<img src="./figures/unsup_ml0.png" align="middle">
+</section>
+<section id="slide-org6c77a2b">
+<h3 id="org6c77a2b">Apprentissage non supervisé</h3>
+<p>
+<b><i>Clustering</i></b>
+</p>
+<img src="./figures/unsup_ml1.png" align="middle">
+</section>
+<section id="slide-org7af1764">
+<h3 id="org7af1764">Apprentissage non supervisé</h3>
+<p>
+Quelques exemples d'algorithme: 
+</p>
+
+<p>
+<b><i>Clustering</i></b>
+</p>
+<ul>
+<li>k-Means</li>
+
+</ul>
+<p>
+<b>Visualisation et réduction de la dimension</b>
+</p>
+<ul>
+<li>Analyse en composant principale</li>
+
+</ul>
+<p>
+<b>Règle d'association</b>
+</p>
+<ul>
+<li>Apriori</li>
+
+</ul>
+<aside class="notes">
+<p>
+L'idée sous jacente est de trouver une structure aux données, un moyen de les
+représenter pour:
+</p>
+<ul>
+<li>identifier des données annormals (outlier)</li>
+<li>découvrir que les personnes qui achète de la sauce barbecue et des chips chète
+aussi en général des steaks 🤓.</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org6771bc5">
+<h3 id="org6771bc5">Apprentissage semi supervisé</h3>
+<p>
+<b>Un jeu de données partiellement labellisé</b>
+</p>
+<img src="./figures/semisup_ml0.png" align="middle">
+<aside class="notes">
+<p>
+Exemple classique: 
+</p>
+<ul>
+<li>quand on charge ses photos sur google photo il reconnaît seul les mêmes
+personnes sur les différentes photos (clustering).</li>
+<li>il suffit de labelliser une seul fois la personne sur une des photos pour que
+tout le groupe soit labellisé.</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orge2e5a20">
+<h3 id="orge2e5a20">Test et validation des algorithmes</h3>
+<p>
+<b>Mesure de la performance</b>
+Par exemple l'erreur absolue moyenne:
+</p>
+
+<p>
+\[ MAE = \frac{1}{n} \sum_{i =1}^{n} |Y_i - \hat{Y_i}| \]
+</p>
+
+<p>
+<b>Données de validation</b>
+</p>
+
+<p>
+Ce sont des données qui n'ont jamais été vu par les algorithmes, typiquement \(20
+\%\) des données.
+</p>
+
+<p>
+<b>No Free Lunch Theorem (<a href="https://en.wikipedia.org/wiki/No_free_lunch_theorem">wikipedia</a>)</b>
+</p>
+
+<p>
+Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orga545e86">
+<h2 id="orga545e86"><span class="todo TODO">TODO</span> 2. Comment mener un projet <i>Machine Learning</i> ?</h2>
+<p>
+<b>Objectif</b> Prédire le prix de l'immobilier en Californie.
+</p>
+
+<p>
+cette <a href="https://www.google.fr/search?client=ubuntu&amp;hs=6OV&amp;biw=1920&amp;bih=877&amp;tbm=isch&amp;q=housing+california&amp;spell=1&amp;sa=X&amp;ved=0ahUKEwivsc7XvtvfAhVLzRoKHVNrAkgQBQg6KAA#imgrc=Xd7jQBjUnUI6CM:">image</a>
+</p>
+
+<aside class="notes">
+<p>
+Le diable est dans les détails donc je vais tacher de donner ces petit details
+d'organisation qui peuvent faire gagner du temps.
+</p>
+
+<p>
+On va voir les points clées
+</p>
+
+</aside>
+</section>
+<section id="slide-org445d732">
+<h3 id="org445d732">Projet <i>Machine Learning</i>: principales étapes</h3>
+<ol>
+<li>Comprendre le problème</li>
+<li>Rassembler les données</li>
+<li>Découvrir et visualisé les données</li>
+<li>Créer les modèles</li>
+<li>Déployer le système</li>
+
+</ol>
+
+</section>
+<section id="slide-orgb531c39">
+<h3 id="orgb531c39">Créer un dossier pour le projet <img src="./figures/logo_git.png" width="110" height="46" alt="Git" style="border: 0;" /> !!</h3>
+<pre class="example">
+├── Makefile           &lt;- avec des commandes comme make data ou make train
+├── README.md          &lt;- Point de départ pour un nouvel arrivant sur le projet
+├── data
+│   ├── external       &lt;- Données venant d'un tierce
+│   ├── interim        &lt;- Données transformées intermédiaires
+│   ├── processed      &lt;- Données finales, prètes pour les algos
+│   └── raw            &lt;- Les données d'origine, immuables ! 
+│
+├── docs               &lt;- La documentation du projet (exemple: Sphinx ou MkDocs)
+│
+├── models             &lt;- Modèles entrainés
+│
+├── notebooks          &lt;- Les notebooks (exemple: Jupyter, Rmarkdown)
+│
+├── references         &lt;- Manuel, présentation, doc etc.
+│
+├── reports            &lt;- Rapports
+│   └── figures        &lt;- figures des rapports
+│
+├── requirements.txt   &lt;- Pour reproduire l'environnement de l'analyse, exemple
+│                         généré avec `pip freeze &gt; requirements.txt`
+│
+├── src                &lt;- Code source du projet (package python/R)
+</pre>
+
+<aside class="notes">
+<p>
+Mais avant de commencer il faut créer un espace de travaille !
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org5178e0f">
+<h3 id="org5178e0f">1. Comprendre le problème</h3>
+<div class="outline-text-3" id="text-org5178e0f">
+</div>
+</section>
+<section id="slide-orgdbe0d3a">
+<h4 id="orgdbe0d3a">Comprendre le problème</h4>
+<p>
+<b>Pourquoi le client a besoin de cette algorithme ?</b>
+</p>
+<blockquote nil>
+<p>
+Le client veut savoir si il a intérêt à investir dans un quartier. Pour cela il
+lui faut le prix médian du quartier.
+</p>
+</blockquote>
+</section>
+<section id="slide-orgead0ccc">
+<h4 id="orgead0ccc">Comprendre le problème</h4>
+<p>
+<b>Comment cet algorithme sera utilisé ? Dans quel environnent ?</b>
+</p>
+
+<img src="./figures/pipeline.png" align="middle">
+
+</section>
+<section id="slide-orge272bf0">
+<h4 id="orge272bf0">Comprendre le problème</h4>
+<p>
+<b>Existe t-il une solution actuellement ?</b>
+</p>
+<blockquote nil>
+<p>
+La valeur est estimée par des experts ou des règles compliquées.
+</p>
+</blockquote>
+
+<aside class="notes">
+<p>
+Cela donne une méthode de base pour évaluer notre proposition de nouvelle
+méthode.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org3ad8992">
+<h4 id="org3ad8992">Modélisation du problème</h4>
+<p>
+<b>De quelle type d'algorithme d'apprentissage avons nous besoins ?</b>
+</p>
+
+<p class="fragment roll-in">
+<b><i>Machine Learning</i> supervisé:</b> en particulier il s'agit d'un problème de
+régression multiple (<i>multivariate regression</i> en anglais).
+</p>
+
+</section>
+<section id="slide-org65de42e">
+<h4 id="org65de42e">Choisir la métrique d'évaluation</h4>
+<p>
+<b>Ça dépend du problème !</b>
+</p>
+
+<ul>
+<li>Interprétable par le client ?
+\[RMSE = \sqrt{\frac{1}{n} \sum_{i =1}^{n} (Y_i - \hat{Y_i})^2}\]</li>
+<li>Plus dure a interpréter mais utile ? 
+\[ R2 = 1 - \frac{\sum_{i =1}^{n} (Y_i - \hat{Y_i})^2}{\sum_{i =1}^{n} (Y_i - \bar{Y})^2} \]</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>La métrique dépend du problème !</li>
+<li>mais comme c'est avec ca qu'on évaluation la performance il est très impotante de
+bien la comprendre !</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org52d089d">
+<h3 id="org52d089d">2. Rassembler les données</h3>
+<div class="outline-text-3" id="text-org52d089d">
+</div>
+</section>
+<section id="slide-org3b63baf">
+<h4 id="org3b63baf">Quelles données ?</h4>
+<p>
+<b>Les données du client ?</b>
+</p>
+
+<p>
+<b>Des données publiques ?</b>
+</p>
+<ul>
+<li>par exemple la météo ?</li>
+
+</ul>
+
+<p>
+<b>Des données simulées ?</b>
+</p>
+<ul>
+<li>très utile pour tester les algorithmes</li>
+<li>peut permettre d'agrandir le jeux de données</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>Il faut commencer par récupérer les données du client dans le cas de l'exemple
+il s'agit des données des prix médian ainsi que d'autre statistique sur
+différent quartier de Californie</li>
+<li>il peut y avoir une différence de météo selon les quartiers</li>
+<li>Quand l'algorithme devra prédire le prix pour des nouveaux quartiers pourront
+rassembler ces données ? A quel prix ? Il n'est pas forcement facile d'aller
+récupérer les données météo.</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org9189b19">
+<h4 id="org9189b19">Quelles données ?</h4>
+<p>
+<b>données dynamique ?</b>
+</p>
+<ul>
+<li>Consommation énergétique d'un bâtiment</li>
+
+</ul>
+
+<p>
+<b>Pourront nous avoir accès à ces données quand l'algorithme sera en production
+ ?</b>
+</p>
+<ul>
+<li>données météo</li>
+
+</ul>
+
+<p>
+<b>Big data ?</b>
+</p>
+<ul>
+<li>données de log de machine industriel</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Quelques question qu'on peut se poser sur les données
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org474b04d">
+<h4 id="org474b04d"><span class="todo TODO">TODO</span> La natures des données ?</h4>
+<p>
+<b>Données tabulaires</b>
+</p>
+
+<p>
+<b>Les données séquentielles</b>
+</p>
+
+<p>
+<b>Les images</b>
+</p>
+
+<p>
+<b>Données textuels</b>
+</p>
+
+<aside class="notes">
+<p>
+A quelle type de données on est habituellement confrontés
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org16070d4">
+<h4 id="org16070d4"><span class="todo TODO">TODO</span> Structure de données: <i>DataFrame</i></h4>
+<p>
+insert cette image <a href="https://www.google.com/search?q=dataframe+structure+representation&amp;rlz=1C1GCEA_enFR773FR773&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwibo5Wj8tPfAhVD8hQKHW-xCWYQ_AUIDigB&amp;biw=1536&amp;bih=723#imgrc=khvRhkwTvwexiM:">here</a>
+</p>
+
+<p>
+<b>Avantages</b>
+</p>
+<ul>
+<li>opération classique sur les base données</li>
+<li>représentation classique \(observations \times features\)</li>
+<li>facile a paralléliser</li>
+
+</ul>
+
+<p>
+<b>Library</b>
+</p>
+<ul>
+<li>R: <code>dplyr</code></li>
+<li>python: <code>pandas</code></li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>Il existe de nombreux moyen de représenté les données mais pour travailler on
+utilise très souvent des data frame.</li>
+<li>C'est la structure de données utilisé pendant la phase d'exploration des données</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orgca8974a">
+<h4 id="orgca8974a">Structure de données: <i>Tensor</i></h4>
+<p>
+<a href="https://www.google.com/search?q=tensor+data+structure&amp;rlz=1C1GCEA_enFR773FR773&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjo78_B8tPfAhWbBWMBHZwcB2IQ_AUIDigB&amp;biw=1536&amp;bih=723#imgrc=qe54JoUROxNuyM">get image here</a>
+</p>
+
+<p>
+<b>Avantages</b>
+</p>
+<ul>
+<li>algorithmes fonctionnent bien avec ces structure de données</li>
+<li>parfait pour représenter des images ou des séries temporels</li>
+<li>algèbre linéaire</li>
+
+</ul>
+
+<p>
+<b>Library</b>
+</p>
+<ul>
+<li><code>TensorFlow</code></li>
+<li><code>Numpy</code></li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>c'est la structure de données des algorithmes de machine learning</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org81dfb8e">
+<h4 id="org81dfb8e">Notre exemple : <i>California Housing Prices dataset</i></h4>
+<img src="./figures/cal_map.png" align="middle" width=600>
+
+<ul>
+<li>Données statique</li>
+<li><i>Small data</i>: ça tient sur un ordinateur</li>
+
+</ul>
+
+</section>
+<section id="slide-org1bec56e">
+<h4 id="org1bec56e"><span class="todo TODO">TODO</span> Notre exemple : <i>California Housing Prices dataset</i></h4>
+<ul>
+<li>Données accessible en production</li>
+
+</ul>
+<pre class="example">
+mettre la liste des colonnes
+</pre>
+
+</section>
+<section id="slide-org18c29bf">
+<h3 id="org18c29bf">3. Découvrir et visualisé les données</h3>
+<div class="outline-text-3" id="text-org18c29bf">
+</div>
+</section>
+<section id="slide-org8e26f81">
+<h4 id="org8e26f81">Choisir un langage programmation ?</h4>
+<p>
+<b>R</b>
+</p>
+<ul>
+<li>communauté centrée autour des <i>data science</i></li>
+<li>état de l'art des méthodes statistique</li>
+
+</ul>
+
+<p>
+<b>python</b>
+</p>
+<ul>
+<li>très grande communauté de développeurs, langage <i>élégant</i></li>
+<li>vision par ordinateur</li>
+
+</ul>
+
+<p>
+<b>Choisir un paradigme de programmation ?</b>
+</p>
+<ul>
+<li>programmation fonctionnelle</li>
+<li>programmation orientée objet</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>si vous vous intéresser au machine learning, ces deux langages ressorte</li>
+<li>Ce qui est sur c'est qu'a cette étape de prototypage il faut pouvoir avancer
+vite, ces deux langage on une grosse communauté et des environnements adapté
+au machine learning.</li>
+<li>si je devais en choisir un ca serai le R: 
+<ul>
+<li>communauté plus petite et centré autour des data science</li>
+<li>outils de traitement et vizualisation de données plus puissant</li>
+<li>language plutot fonctionnel</li>
+
+</ul></li>
+<li>une question qu'on se pose jamais c'est le choix de paradigme de programmation
+<ul>
+<li>pour simplifier ca veut dire coder en suivant quelque règle/habitude</li>
+<li>pour SIMPLIFIER on peut distinguer deux grands paradigmes, qui sont pas
+forcément disjoint</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org15a0604">
+<h4 id="org15a0604"><span class="todo TODO">TODO</span> Programmation orienté objet</h4>
+<p>
+<b>En quelques mots</b>
+</p>
+<ul>
+<li>on décompose le problème en objets</li>
+<li>concept d'objets: attribues, héritage, interaction entre objets</li>
+<li>programmation impérative: modification de l'état internes des objets</li>
+
+</ul>
+
+<p>
+<b>Avantages</b>
+</p>
+<ul>
+<li>permet de concevoir des logiciels complexes</li>
+
+</ul>
+<p>
+<a href="https://www.google.com/url?sa=i&amp;source=imgres&amp;cd=&amp;ved=2ahUKEwjWk-7WidzfAhVLUxoKHdSpAqsQjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.amazon.fr%2FDesign-Patterns-Elements-Reusable-Object-Oriented-ebook%2Fdp%2FB000SEIBB8&amp;psig=AOvVaw2yjVHCZtSp-N9Cf8v2pQUN&amp;ust=1546964419118577">Image</a> 
+</p>
+
+<aside class="notes">
+<ul>
+<li>un problème est décomposé en object avec des états internes et des interaction
+en ces objects</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgec4bd10">
+<h4 id="orgec4bd10">Programmation orienté objet: exemple en python</h4>
+<p>
+On veux ajouter les éléments d'un tableau 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="python" >class Array:
+    def __init__(self, data):
+        self.data = data
+
+    def add(self, t2):
+        for i in range(len(self.data)):
+            self.data[i] = t2.data[i] + self.data[i]
+
+a1 = Array([1,2,3])
+a2 = Array([3,8,6])
+a1.add(a2)
+print(a1.data)
+</code></pre>
+</div>
+
+<pre class="example">
+[4, 10, 9]
+
+</pre>
+
+<aside class="notes">
+<ul>
+<li>On commence par creer un objet et on lui définie une méthodes.</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orge1b45d9">
+<h4 id="orge1b45d9">Programmation fonctionnel</h4>
+<p>
+<b>En quelques mots</b>
+</p>
+<ul>
+<li>on décompose le problème en fonctions</li>
+<li>concept de fonctions: fonctions pures, lamda-fonction, récursion</li>
+<li>programmation déclarative: composants logiciels indépendants du contexte et ne
+comportant aucun état interne.</li>
+
+</ul>
+
+<p>
+<b>Avantages</b>
+</p>
+<ul>
+<li>plus simple a tester</li>
+<li>concept de pipeline de données</li>
+<li>parallélisation sur plusieurs machines/core</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>On décompose le problème en fonctions imbriquées, les fonctions on une etré et
+une sortie et sont pures !</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org848d364">
+<h4 id="org848d364">Programmation fonctionnel: un exemple en python</h4>
+<p>
+On veux ajouter les éléments d'un tableau 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="python" >def add(x, y):
+    return x + y
+
+a1 = [1,2,3]
+a2 = [3,8,6]
+
+print(map(add, a1, a2))
+</code></pre>
+</div>
+
+<pre class="example">
+[4, 10, 9]
+
+</pre>
+
+<aside class="notes">
+<ul>
+<li>on utilise les types de base python et on cherche découper la tache en
+fonctions</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org82afcbc">
+<h4 id="org82afcbc"><span class="todo TODO">TODO</span> Créer un environnement isolé et reproductible</h4>
+<p>
+<b>Pourquoi ?</b>
+</p>
+<ul>
+<li>Pour reproduire les résultats</li>
+<li>Facilite la mise en production</li>
+
+</ul>
+
+<p>
+<b>Exemple d'outils</b>
+</p>
+<ul>
+<li>Python <code>virtualenv</code></li>
+<li><code>conda</code></li>
+
+</ul>
+
+<div class="org-src-container">
+
+<pre><code class="shell" >conda create -n california_env python=3.6 numpy pandas scikit-learn 
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org3892a09">
+<h4 id="org3892a09"><span class="todo TODO">TODO</span> Les notebooks</h4>
+<p>
+<a href="http://arogozhnikov.github.io/images/jupyter/example-notebook.png">image</a>
+</p>
+
+<p>
+<b>Exemple de notebook</b>
+</p>
+<ul>
+<li>Jupyter notebook</li>
+<li>Rmarkdown</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>un notebooks un environnement de dévellopement ou on peut coder et decrire ce
+que l'on code (litterate programming)</li>
+<li>les sorties du code sont capturé et peuvent être reprise plus tard</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org605ce7f">
+<h4 id="org605ce7f"><span class="todo TODO">TODO</span> Trop de notebooks, tue le notebook</h4>
+<ul>
+<li>see notebook war ! <a href="https://yihui.name/en/2018/09/notebook-war/">https://yihui.name/en/2018/09/notebook-war/</a></li>
+<li>quand les utiliser et quand s'arrêter !</li>
+
+</ul>
+</section>
+<section id="slide-orgedb74c0">
+<h4 id="orgedb74c0"><span class="todo TODO">TODO</span> Notre exemple : visualisation des données</h4>
+<p>
+plot page 55
+plot page 58
+</p>
+</section>
+<section id="slide-org19846ac">
+<h3 id="org19846ac">4. Créer les modèles</h3>
+<div class="outline-text-3" id="text-org19846ac">
+</div>
+</section>
+<section id="slide-orgbda5a5f">
+<h4 id="orgbda5a5f">Créer une stratégie d'évaluation</h4>
+<aside class="notes">
+<p>
+Critique ! 
+</p>
+
+</aside>
+</section>
+<section id="slide-orgfdde4fe">
+<h4 id="orgfdde4fe">Créer des modèles</h4>
+<p>
+C'est partie pour le code !
+</p>
+
+<pre class="example">
+├── src                &lt;- Code source *paquagé*
+├── models             &lt;- Trained and serialized models, model predictions, or model summaries
+</pre>
+<ul>
+<li>Faire des packages: R et python sont très bien pour ca</li>
+<li>documenter les fonctions: R: Roxygen, python: docstring</li>
+
+</ul>
+
+<p>
+<b>TDD: Test Driven Development</b>
+</p>
+<ul>
+<li>python: <code>pytest</code>, R: <code>testthat</code></li>
+<li>c'est plus simple en programmation fonctionnel car pas d'effet de bord</li>
+
+</ul>
+
+</section>
+<section id="slide-org06b7372">
+<h4 id="org06b7372">Évaluation des modèles par la validation croisée</h4>
+</section>
+<section id="slide-orgb4ec339">
+<h4 id="orgb4ec339">Choix d'un modèle</h4>
+<p>
+<b>Critères</b>
+</p>
+<ul>
+<li>Performance</li>
+<li>Facile à mettre en production: 
+<ul>
+<li>je peux l'intégrer sur la plate-forme de production ?</li>
+
+</ul></li>
+<li>Facile à débuguer
+<ul>
+<li>si le modèle donne de mauvais résultats</li>
+
+</ul></li>
+<li>Interpretable
+<ul>
+<li>je peux comprendre pourquoi cette prediction ?</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org008f5be">
+<h4 id="org008f5be">Notre exemple :</h4>
+</section>
+<section id="slide-org0245d58">
+<h3 id="org0245d58">5. Déployer le système</h3>
+<div class="outline-text-3" id="text-org0245d58">
+</div>
+</section>
+<section id="slide-org6da3088">
+<h4 id="org6da3088">Déployer le modèle</h4>
+<p>
+Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du client !
+</p>
+
+<p>
+<b>Points clés</b>
+</p>
+<ul>
+<li>Évaluer les données d'entrée</li>
+<li>Fournir les prédictions avec les explications si il y en a</li>
+<li>Signaler une divergence du modèle</li>
+<li>Ré-entrainer le modèle</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>Etape très dépendante de l'environnement du client mais il y a quelque point clée.</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgaed5ca6">
+<h4 id="orgaed5ca6">Architecture orientée services</h4>
+<p>
+<b>Concepts</b>
+</p>
+
+</section>
+<section id="slide-orgee1fadb">
+<h4 id="orgee1fadb">Exemple d'architecture</h4>
+<p>
+<b>Exemple: Azure Machine Learning service</b>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org4aa5725">
+<h2 id="org4aa5725">Références</h2>
+<ul>
+<li><a href="https://github.com/drivendata/cookiecutter-data-science">https://github.com/drivendata/cookiecutter-data-science</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:../../js/reveal.js/lib/js/head.min.js"></script>
+<script src="file:../../js/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: false,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'fast',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:../../js/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:../../js/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
