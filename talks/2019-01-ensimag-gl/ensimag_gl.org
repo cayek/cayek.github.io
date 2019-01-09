@@ -681,3 +681,8 @@ des infrastructures informatiques (ops), notamment l'administration système.
 #+REVEAL_HTML: </div>
 
 
+* Notes sur la présentation
+** Le [2019-01-09 mer.], cours de GL à l'Ensimag
+- la partie devops, intégration continue était trop courte.
+- trop de détails sur le machine learning et surtout sur des éléments techniques
+  comme la cross validation etc.
