@@ -55,7 +55,7 @@ Learning/.
 :reveal_background_size: 1000px
 :END:
 ** Qu'est ce que le /Machine Learning/ ?
-*Approche traditionnel*
+*Approche traditionnelle*
 #+HTML: <img src="./figures/traditional_workflow.png" align="middle">
 
 #+BEGIN_NOTES
@@ -88,7 +88,7 @@ Exemple:
 - détection de fautes sur des machines industrielles
 
 ** Apprentissage supervisé
-*Un jeu de données labellisé*
+*Un jeu de données labellisées*
 #+HTML: <img src="./figures/sup_ml0.png" align="middle">
 ** Apprentissage supervisé
 *Régression*
@@ -313,10 +313,9 @@ Quelques question qu'on peut se poser sur les données
 A quelle type de données on est habituellement confrontés
 #+END_NOTES
 
-*** TODO Structure de données: /DataFrame/
+*** Structure de données: /DataFrame/
 
-insert cette image [[https://www.google.com/search?q=dataframe+structure+representation&rlz=1C1GCEA_enFR773FR773&source=lnms&tbm=isch&sa=X&ved=0ahUKEwibo5Wj8tPfAhVD8hQKHW-xCWYQ_AUIDigB&biw=1536&bih=723#imgrc=khvRhkwTvwexiM:][here]]
-
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
 *Avantages*
 - opération classique sur les base données
 - représentation classique $observations \times features$
@@ -325,6 +324,13 @@ insert cette image [[https://www.google.com/search?q=dataframe+structure+represe
 *Library*
 - R: =dplyr=
 - python: =pandas=
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+#+REVEAL_HTML: <div class="center">
+#+HTML: <img src="./figures/dataframe_struct.png" width="50%">
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: </div>
 
 #+BEGIN_NOTES
 - Il existe de nombreux moyen de représenté les données mais pour travailler on
@@ -334,16 +340,20 @@ insert cette image [[https://www.google.com/search?q=dataframe+structure+represe
 
 *** Structure de données: /Tensor/
 
-[[https://www.google.com/search?q=tensor+data+structure&rlz=1C1GCEA_enFR773FR773&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjo78_B8tPfAhWbBWMBHZwcB2IQ_AUIDigB&biw=1536&bih=723#imgrc=qe54JoUROxNuyM][get image here]]
-
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
 *Avantages*
 - algorithmes fonctionnent bien avec ces structure de données
-- parfait pour représenter des images ou des séries temporels
+- parfait pour représenter des images ou des séries temporelles
 - algèbre linéaire
 
 *Library*
 - =TensorFlow=
 - =Numpy=
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+#+HTML: <img src="./figures/array_struct.png" width="50%">
+#+REVEAL_HTML: </div>
 
 #+BEGIN_NOTES
 - c'est la structure de données des algorithmes de machine learning
@@ -355,13 +365,6 @@ insert cette image [[https://www.google.com/search?q=dataframe+structure+represe
 
 - Données statique
 - /Small data/: ça tient sur un ordinateur
-
-*** TODO Notre exemple : /California Housing Prices dataset/
-
-- Données accessible en production
-#+BEGIN_EXAMPLE
-mettre la liste des colonnes
-#+END_EXAMPLE
 
 ** 3. Découvrir et visualisé les données
 *** Choisir un langage programmation ?
@@ -391,8 +394,8 @@ mettre la liste des colonnes
   - pour SIMPLIFIER on peut distinguer deux grands paradigmes, qui sont pas
     forcément disjoint
 #+END_NOTES
-*** TODO Programmation orienté objet
-
+*** Programmation orienté objet
+#+REVEAL_HTML: <div class="column" style="float:left; width: 70%">
 *En quelques mots*
 - on décompose le problème en objets
 - concept d'objets: attribues, héritage, interaction entre objets
@@ -400,7 +403,11 @@ mettre la liste des colonnes
 
 *Avantages*
 - permet de concevoir des logiciels complexes
-[[https://www.google.com/url?sa=i&source=imgres&cd=&ved=2ahUKEwjWk-7WidzfAhVLUxoKHdSpAqsQjRx6BAgBEAU&url=https%253A%252F%252Fwww.amazon.fr%252FDesign-Patterns-Elements-Reusable-Object-Oriented-ebook%252Fdp%252FB000SEIBB8&psig=AOvVaw2yjVHCZtSp-N9Cf8v2pQUN&ust=1546964419118577][Image]] 
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 30%">
+#+HTML: <img src="./figures/design_pattern.jpg" width="50%">
+#+REVEAL_HTML: </div>
 
 #+BEGIN_NOTES
 - un problème est décomposé en object avec des états internes et des interaction
@@ -475,14 +482,15 @@ print(map(add, a1, a2))
   fonctions
 #+END_NOTES
 
-*** TODO Créer un environnement isolé et reproductible 
+*** Créer un environnement isolé et reproductible 
 *Pourquoi ?*
 - Pour reproduire les résultats
 - Facilite la mise en production 
 
 *Exemple d'outils*
-- Python =virtualenv=
-- =conda=
+- Python: =virtualenv=
+- R et python: =conda=
+- R: packrat
 
 #+BEGIN_SRC shell
 conda create -n california_env python=3.6 numpy pandas scikit-learn 
@@ -492,12 +500,16 @@ conda create -n california_env python=3.6 numpy pandas scikit-learn
 
 #+END_NOTES
 
-*** TODO Les notebooks
-[[http://arogozhnikov.github.io/images/jupyter/example-notebook.png][image]]
-
-*Exemple de notebook*
+*** Les notebooks
+#+REVEAL_HTML: <div class="column" style="float:left; width: 30%">
+*Exemples de notebook*
 - Jupyter notebook 
 - Rmarkdown
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 70%">
+#+HTML: <img src="./figures/example-notebook.png" width="100%">
+#+REVEAL_HTML: </div>
 
 #+BEGIN_NOTES
 - un notebooks un environnement de dévellopement ou on peut coder et decrire ce
@@ -505,12 +517,20 @@ conda create -n california_env python=3.6 numpy pandas scikit-learn
 - les sorties du code sont capturé et peuvent être reprise plus tard
 #+END_NOTES
 
-*** TODO Trop de notebooks, tue le notebook                      :noexport:
+*** CANCELLED Trop de notebooks, tue le notebook                 :noexport:
+CLOSED: [2019-01-09 mer. 13:33]
 - see notebook war ! https://yihui.name/en/2018/09/notebook-war/
 - quand les utiliser et quand s'arrêter !
-*** TODO Notre exemple : visualisation des données 
-plot page 55
-plot page 58
+*** Notre exemple : visualisation des données 
+
+#+HTML: <img src="./figures/scatter_plot.png" width="75%">
+
+#+BEGIN_NOTES
+- la scatter matrix
+- in permet de rapidement voir les corrélation entre les variables.
+- par exemple on voit qu'il y a une corrélation entre median_income et median_house_value
+- donc c'est un feature interessant pour prédire la valeur de maison
+#+END_NOTES
 ** 4. Créer les modèles
 *** Créer une stratégie d'évaluation
 
@@ -521,6 +541,7 @@ plot page 58
 - Évaluer l'erreur du modèle sur des nouvelle données
 
 *Données de validation*
+
 - Ce sont des données utilisé pour valider la phase d'apprentissage
 - choisir les hyperparamètres
 
@@ -535,10 +556,11 @@ plot page 58
 *Données structurées ?*
 #+HTML: <img src="./figures/ts_val_test.png" align="middle" width=600>
 
-*** TODO Créer une stratégie d'évaluation
+*** Créer une stratégie d'évaluation
+*Notre exemples* données sont stratifiées
 
-*Notre exemples*
-image livre (bar plot)
+#+HTML: <img src="./figures/bar.jpg" align="middle" width="60%">
+Histogramme des catégories de loyers
 
 *** Créer des modèles
 
@@ -551,25 +573,45 @@ image livre (bar plot)
 
 - python: =pytest=, R: =testthat=
 - c'est plus simple en programmation fonctionnelle car pas d'effets de bord
+*** Modèle pour notre exemple
+*Régression linéaire ridge*
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
+- On modélise: 
+  $$ Y = X B^T + E  $$ 
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+- On minimise 
+  $$ f(B) = || Y - X B^T ||^2 + beta ||B||^2 $$
+#+REVEAL_HTML: </div>
+
+*Random forest*
+#+HTML: <img src="./figures/random_forest.png" align="middle" width="45%">
+
+#+BEGIN_NOTES
+- l'un des modèles est simple 
+- lautre est compliqué et en générale donne des meilleur résultats de prédiction
+- les deux modèles on est hyper paramètre => comment on les choisis ? 
+#+END_NOTES
 
 *** Évaluation et /tuning/ des modèles par la validation croisée
 
 #+HTML: <img src="./figures/cv.png" align="middle">
 
+#+BEGIN_NOTES
+- On choisi le beta de la regression linéaire qui minimise l'erreur de cross validation !!
+#+END_NOTES
+
 *** Choix d'un modèle ?
 
-*Critères*
+*Critères pour choisir*
 
-- Performance: CV, erreur sur données validation
+- Performance: CV, erreur sur les données de validations
 - Facile à mettre en production: 
   - je peux l'intégrer sur la plate-forme de production ?
 - Facile à déboguer
   - si le modèle donne de mauvais résultats 
 - Interpretable
   - je peux comprendre pourquoi cette prédiction ? 
-*** TODO Notre exemple
-écrire un modèle linéaire
-
 ** 5. Déployer le système
 *** Déployer le modèle
 
@@ -588,8 +630,9 @@ Maintenant qu'on a un modèle il faut l'intégrer dans le système du client !
   quelques points questions clées.
 - on des préoccupation de mise en production ! 
 #+END_NOTES
-*** TODO /Developpement/ - /Operations/
-slide 6
+*** /Developpement/ - /Operations/
+
+#+HTML: <img src="./figures/dev_ops.png" width="100%">
 
 #+BEGIN_NOTES
 Quand on cherche à déployer un model
@@ -598,8 +641,9 @@ On a traditionnellement d'un coté
 - operations: administration des infrastructures informatiques 
 #+END_NOTES
 
-*** TODO Dev-Ops
-slide 7
+*** Dev-Ops
+
+#+HTML: <img src="./figures/devops.png" width="100%">
 
 #+BEGIN_NOTES
 Une facon plus moderne de travailler consiste à unifier Dev et Ops
@@ -610,16 +654,30 @@ visant à l'unification du développement logiciel (dev) et de l'administration
 des infrastructures informatiques (ops), notamment l'administration système.
 #+END_NOTES
 
-*** TODO Architecture orientée services
-slide 20 
+*** Architecture orientée services
+
+#+HTML: <img src="./figures/components.png" width="60%">
 #+BEGIN_NOTES
 - Pour unifier le developpement et opération une pratique courante est fournir des API! 
 - Notre service (ici la prédiction du prix de l'immobilier)
 - dans ce composant on gère le dev, le modèle et l'infrastructure ! 
 #+END_NOTES
 
-** TODO Conclusion
-slide 4 la boucle
+* Conclusion: /Cross-industry standard process for data mining/
+
+#+HTML: <img src="./figures/800px-CRISP-DM_Process_Diagram.png" align="middle"  width="45%">
+
 * Références
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
+
 - [[http://shop.oreilly.com/product/0636920052289.do][Hands-On Machine Learning with Scikit-Learn and TensorFlow]]
 - [[https://fr.slideshare.net/Hadoop_Summit/how-to-deploy-machine-learning-models-into-production][How to deploy machine learning models into production]], [[https://www.youtube.com/watch?v=-UYyyeYJAoQ][youtube]]
+
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+#+HTML: <img src="./figures/book_ml.jpg" align="middle"  width="60%">
+
+#+REVEAL_HTML: </div>
+
+
