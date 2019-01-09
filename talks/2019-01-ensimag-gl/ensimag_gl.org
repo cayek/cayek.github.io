@@ -19,7 +19,6 @@
 #+REVEAL_EXTRA_JS: 
 
 
-
 * TODO TODO                                                        :noexport:
 Faire un peut en mode time line
 - définir science des données
@@ -81,6 +80,13 @@ clée:
 - Ancien Ensimag (promotion 2014)
 - Thèse en méthodes statistiques pour la génétique
 - Prestataire de service chez Kaizen Solution
+
+#+BEGIN_NOTES
+- Donc pour moi le génie logiciel c'est un effet bord ! j'ai vaguement abbordé
+  ca à l'ensimag ....
+- Mais c'est indispensable dans mon travail
+#+END_NOTES
+
 * Plan et objectifs 
 
 *Objectifs*
@@ -184,7 +190,7 @@ Exemple classique:
 - il suffit de labelliser une seul fois la personne sur une des photos pour que
   tout le groupe soit labellisé.
 #+END_NOTES
-** Test et validation des algorithmes
+** Test et validation des algorithmes                             :noexport:
 
 *Mesure de la performance*
 Par exemple l'erreur absolue moyenne:
@@ -200,11 +206,11 @@ Ce sont des données qui n'ont jamais été vu par les algorithmes, typiquement 
 
 Il n'y pas de modèle universelle, qui serait le meilleur tout le temps.
 
-* TODO 2. Comment mener un projet /Machine Learning/ ?
+* 2. Comment mener un projet /Machine Learning/ ?
 
 *Objectif* Prédire le prix de l'immobilier en Californie.
 
-cette [[https://www.google.fr/search?client=ubuntu&hs=6OV&biw=1920&bih=877&tbm=isch&q=housing+california&spell=1&sa=X&ved=0ahUKEwivsc7XvtvfAhVLzRoKHVNrAkgQBQg6KAA#imgrc=Xd7jQBjUnUI6CM:][image]]
+#+HTML: <img src="./figures/housing_californie.jpg" align="middle" width=600>
 
 #+BEGIN_NOTES
 Le diable est dans les détails donc je vais tacher de donner ces petit details
@@ -336,18 +342,29 @@ régression multiple (/multivariate regression/ en anglais).
 Quelques question qu'on peut se poser sur les données
 #+END_NOTES
 
-*** TODO La natures des données ?
+*** La natures des données ?
 :LOGBOOK:
 - Note taken on [2019-01-07 lun. 11:50] \\
   insert image
 :END:
+
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
 *Données tabulaires*
+#+HTML: <img src="./figures/dataframe.png" align="middle" width=200>
 
 *Les données séquentielles*
+#+HTML: <img src="./figures/ts.jpeg" align="middle" width=200>
 
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
 *Les images*
+#+HTML: <img src="./figures/cat.jpg" align="middle" width=200>
 
-*Données textuels*
+*Données textuelles*
+#+HTML: <img src="./figures/text.jpeg" align="middle" width=200>
+
+#+REVEAL_HTML: </div>
 
 #+BEGIN_NOTES
 A quelle type de données on est habituellement confrontés
@@ -545,7 +562,7 @@ conda create -n california_env python=3.6 numpy pandas scikit-learn
 - les sorties du code sont capturé et peuvent être reprise plus tard
 #+END_NOTES
 
-*** TODO Trop de notebooks, tue le notebook
+*** TODO Trop de notebooks, tue le notebook                      :noexport:
 - see notebook war ! https://yihui.name/en/2018/09/notebook-war/
 - quand les utiliser et quand s'arrêter !
 *** TODO Notre exemple : visualisation des données 
@@ -554,58 +571,112 @@ plot page 58
 ** 4. Créer les modèles
 *** Créer une stratégie d'évaluation
 
+*Données de test*
+
+- Ce sont des données qui n'ont jamais été vu par les algorithmes, typiquement
+  $20 \%$ des données.
+- Évaluer l'erreur du modèle sur des nouvelle données
+
+*Données de validation*
+- Ce sont des données utilisé pour valider la phase d'apprentissage
+- choisir les hyperparamètres
+
 #+BEGIN_NOTES
-Critique ! 
+- Critique ! 
+- Il faut que le dataset de test/validation soient représentatifs d'un nouveau
+  dataset.
 #+END_NOTES
+
+*** Créer une stratégie d'évaluation
+
+*Données structurées ?*
+#+HTML: <img src="./figures/ts_val_test.png" align="middle" width=600>
+
+*** TODO Créer une stratégie d'évaluation
+
+*Notre exemples*
+image livre (bar plot)
+
 *** Créer des modèles
 
-C'est partie pour le code !
+*C'est partie pour le code !*
 
-#+BEGIN_EXAMPLE
-├── src                <- Code source *paquagé*
-├── models             <- Trained and serialized models, model predictions, or model summaries
-#+END_EXAMPLE
 - Faire des packages: R et python sont très bien pour ca
 - documenter les fonctions: R: Roxygen, python: docstring
 
-*TDD: Test Driven Development*
+*TDD: /Test Driven Development/*
+
 - python: =pytest=, R: =testthat=
 - c'est plus simple en programmation fonctionnel car pas d'effet de bord
 
-*** Évaluation des modèles par la validation croisée
-*** Choix d'un modèle
+*** Évaluation et /tuning/ des modèles par la validation croisée
+
+#+HTML: <img src="./figures/cv.png" align="middle">
+
+*** Choix d'un modèle ?
+
 *Critères*
-- Performance
+
+- Performance: CV, erreur sur données validation
 - Facile à mettre en production: 
   - je peux l'intégrer sur la plate-forme de production ?
-- Facile à débuguer
+- Facile à déboguer
   - si le modèle donne de mauvais résultats 
 - Interpretable
-  - je peux comprendre pourquoi cette prediction ? 
-*** Notre exemple : 
+  - je peux comprendre pourquoi cette prédiction ? 
+*** TODO Notre exemple
+écrire un modèle linéaire
+
 ** 5. Déployer le système
 *** Déployer le modèle
 
-Maintenant qu'on a un modèle il faut l'intégrer dans dans le système du client !
+Maintenant qu'on a un modèle il faut l'intégrer dans le système du client !
 
-*Points clés*
-- Évaluer les données d'entrée
-- Fournir les prédictions avec les explications si il y en a
-- Signaler une divergence du modèle
-- Ré-entrainer le modèle
+*Questions*
+- Comment ce connecté à la base de données ? 
+- Comment de RAM pour notre modèle ?
+- Logging ?
+- Comment passer à l'échelle ?
+- ...
 
 #+BEGIN_NOTES
-- Etape très dépendante de l'environnement du client mais il y a quelque point clée.
+- On arrète de s'amuser !!!
+- C'est une Etape très dépendante de l'environnement du client mais il y a
+  quelques points questions clées.
+- on des préoccupation de mise en production ! 
 #+END_NOTES
-*** Architecture orientée services
-*Concepts*
+*** TODO /Developpement/ - /Operations/
+slide 6
 
-*** Exemple d'architecture
-:LOGBOOK:
-- Note taken on [2019-01-04 ven. 10:16] \\
-  prendre des images d'ici: https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-auto-train
-:END:
-*Exemple: Azure Machine Learning service*
+#+BEGIN_NOTES
+Quand on cherche à déployer un model
+On a traditionnellement d'un coté 
+- le développement logiciel 
+- operations: administration des infrastructures informatiques 
+#+END_NOTES
 
+*** TODO Dev-Ops
+slide 7
+
+#+BEGIN_NOTES
+Une facon plus moderne de travailler consiste à unifier Dev et Ops
+En pratique : Quelles sources sont attendues ? Comment ajouter mes sources ?
+
+Le devops est un mouvement en ingénierie informatique et une pratique technique
+visant à l'unification du développement logiciel (dev) et de l'administration
+des infrastructures informatiques (ops), notamment l'administration système.
+#+END_NOTES
+
+*** TODO Architecture orientée services
+slide 20 
+#+BEGIN_NOTES
+- Pour unifier le developpement et opération une pratique courante est fournir des API! 
+- Notre service (ici la prédiction du prix de l'immobilier)
+- dans ce composant on gère le dev, le modèle et l'infrastructure ! 
+#+END_NOTES
+
+** TODO Conclusion
+slide 4 la boucle
 * Références
-- https://github.com/drivendata/cookiecutter-data-science
+- [[http://shop.oreilly.com/product/0636920052289.do][Hands-On Machine Learning with Scikit-Learn and TensorFlow]]
+- [[https://fr.slideshare.net/Hadoop_Summit/how-to-deploy-machine-learning-models-into-production][How to deploy machine learning models into production]], [[https://www.youtube.com/watch?v=-UYyyeYJAoQ][youtube]]
