@@ -19,63 +19,6 @@
 #+REVEAL_EXTRA_JS: 
 
 
-* TODO TODO                                                        :noexport:
-Faire un peut en mode time line
-- définir science des données
-- sorti de l'ensimag: git et c++
-- thèse: programmation fonctionnel
-- prestation: mise en production par des web service
-- present the service oriented Architechture: [[https://en.wikipedia.org/wiki/Service-oriented_architecture][wikipedia]] 
- - Pourquoi on fait ca dans l'équipe AAI (présenter l'équipe AAI)
-Expliquer à chaque fois les notions: c'est quoi et à quoi ca sert
-
-Objectif: montrer les différents cas de figure que j'ai rencontrer pour dans mon
-expérience. Je ne veux pas etre exhaustif mais peut être que mon expérience
-pourra vous aider dans des situations similaires.
-
-Commencer par mon profile et mes attentes dans mon boulot. Présenter mes
-expérience avec leur contexte, les problèmes et les solutions apporté. point
-clée:
-- développer des méthodes mathématiques (stage fin d'étude)
-  - première erreur: le c++ c'est super rapide dont je dev en c++. chercher à
-    optimiser trop tôt
-  - j'itère sans faire de test: on sait rapidement plus ou on en ai ! Même quand
-    on dev un prototype c'est pas pour de la production ! il faut faire des
-    tests ! au moins sur le coeur algorithmique. Pas des test unitaires plutôt
-    tester des situations.
-- thèses: 
-  - les model en data sciences
-    - les données: idéal avoir 3 niveaux model génératif, model simulé mais plus
-      compliqué, données réelles
-  - la programmation en data science: fonctionnel
-    - faire une comparaison d'un model implémenté en object et un en fonctionnel ?
-  - La reproductibilité en science
-- Schneider electric
-  - devops
-  - parler de ca: [[https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining][Cross-industry standard process for data mining]]
-  - parler de du TDD même pour les explorations: see [[https://github.com/drivendataorg/power-laws-cold-start/tree/80d612b3ab881647f5a8b6a13960e81985630dc0/1st%2520Place/team-member-a-execute-first#start-of-the-challenge][power-laws-cold-start]]
-  - organization: trouver ca facon de fonctionner: montrer mon workflow. Comment
-    mes dossiers sont organisé et les outils que j'utilise: git lfs pour les
-    data + donnée intermediaire
-- Remarques en vrac
-  - la gestion du model est très importante ! 
-  - avant c'est surtout les chercheurs qui avait des données
-  - maintenant il y en a partout en industrie
-  - la mesure de l'erreur est super important.
-    - definir ce qu'on veut mesurer TODO
-    - Pour ne pas se tromper il faut être rigoureux ! Et donc organiser, comment
-      decouper le dataset ?
-  - parler du piege des notebooks ! et du manque de test unitaire en phase
-    d'exploration. 
-*Plan*
-- Definition des data science et de l'ingénieur en datascience (proposer ma
-  définition), en particulier en industrie avec des examples. Donner aussi des
-  exemples en science.
-- Proposition d'un workflow.
-- Définir les problématiques de chaque étapes et apporter une proposition de
-  solutions et les outils utilisé.
-- Conclusions et take away messages.
-
 * Qui je suis ?
 - Ancien Ensimag (promotion 2014)
 - Thèse en méthodes statistiques pour la génétique
@@ -488,7 +431,7 @@ print(a1.data)
 - On commence par creer un objet et on lui définie une méthodes.
 #+END_NOTES
 
-*** Programmation fonctionnel 
+*** Programmation fonctionnelle 
 :LOGBOOK:
 - Note taken on [2019-01-07 lun. 17:50] \\
   [[https://docs.python.org/3/howto/functional.html][python doc: Functional Programming HOWTO]]
@@ -511,7 +454,7 @@ print(a1.data)
 - On décompose le problème en fonctions imbriquées, les fonctions on une etré et
   une sortie et sont pures ! 
 #+END_NOTES
-*** Programmation fonctionnel: un exemple en python 
+*** Programmation fonctionnelle: un exemple en python 
 On veux ajouter les éléments d'un tableau 
 
 #+BEGIN_SRC python :results output :exports both :eval no-export 
@@ -607,7 +550,7 @@ image livre (bar plot)
 *TDD: /Test Driven Development/*
 
 - python: =pytest=, R: =testthat=
-- c'est plus simple en programmation fonctionnel car pas d'effet de bord
+- c'est plus simple en programmation fonctionnelle car pas d'effets de bord
 
 *** Évaluation et /tuning/ des modèles par la validation croisée
 
